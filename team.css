@@ -1,0 +1,133 @@
+
+            
+            body {
+            background-color: #000;
+            color: #fff;
+            min-height: 200vh;
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+             background-image: url('./img/backgroundImg.png');
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+        }
+        .team-container{
+            display: flex;
+            justify-content: center;
+    
+        }
+       .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            position:absolute;
+        }
+
+        .team-member {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .team-member:hover{
+            cursor: pointer;
+            .memberInfo{
+            display: block;
+            
+        }
+            /* z-index: 1; */
+        }
+        .memberInfo{
+            display: none;
+            position: relative;
+            top: -10rem;
+            left: 0;
+            background-color: red;
+            
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+
+        /* Hover effect */
+
+
+
+
+        .team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  justify-content: center;
+  max-width: 753px;
+      margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 19rem;
+    margin-right: 7rem
+}
+
+.team-member {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border: 2px solid #111;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.hover-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  opacity: 0;
+  transition: 0.3s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.hover-card:hover img {
+  transform: scale(1.05);
+}
+
+.hover-card:hover .overlay {
+  opacity: 1;
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}

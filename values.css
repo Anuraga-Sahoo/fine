@@ -1,0 +1,300 @@
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  background-color: black;
+  color: white;
+  
+  
+}
+.top{
+  
+  background-image: url('./img/backgroundImg.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+/* opacity: 0.5; */
+}
+.top::before{
+  /* opacity: 0.5; */
+  z-index: -1;
+}
+a{
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 20px 40px;
+  
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sign-in {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+display: flex;
+  justify-content: left;
+  margin-top: 160px;
+      gap: 1rem;
+    padding: 0 0 0 16rem;
+}
+
+.tab {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 0 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  height: 91px;
+  font-size: 25px;
+  width: 222px;
+    border-radius: 30px;
+    transition: all ease 0.5s;
+}
+.tab:hover{
+  background-color: white;
+  color: black;
+}
+
+.bar{
+  /* border:0 2px 0 0 solid white ; */
+  background-color: transparent;
+  height: fit-content;
+  border: 2px solid white;
+  border-bottom: 0px;
+  border-top: 0px;
+  padding: 2px;
+}
+.value-active{
+  color: #757171 !important;
+}
+
+.tab.active {
+  background-color: white;
+  color: black;
+  height: 91px;
+  font-size: 25px;
+    width: 222px;
+    border-radius: 30px;
+}
+
+/* Subnav */
+.subnav {
+  padding: 0 0 0 9rem;
+    text-align: left;
+    margin: 105px 0 20px 150px;
+      
+}
+.hero-image{
+  margin: 4rem 0 0 0;
+  /* background-color: red; */
+  position: absolute;
+  top: 36rem;
+  left: 49rem;
+
+}
+.temp-img{
+  
+}
+.subnav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+
+/* Hero Section */
+.hero {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: left;
+  padding: 40px 20px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.banner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.hero-text h1 {
+  font-size: 53px;
+  font-weight:bold;
+  line-height: 76px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-right: 28rem
+}
+
+.hero-image img {
+  max-width: 445.79px;
+  left: 604px;
+  top: 678px;
+  height: 521px;
+
+}
+
+/* Values Section */
+.values-section {
+  padding: 40px 20px;
+  /* padding: 0 0 0 14rem; */
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 40px 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.value-item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.value-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.values-section{
+  display: flex;
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.left-container{
+  width: 40%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  flex-direction: column;
+  /* background-color: blue; */
+  /* padding: 85px; */
+}
+.right-container{
+  width: 40%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;    
+  align-items: center;
+  gap: 9rem;
+  margin-top: 3rem;
+  flex-direction: column;
+  /* padding: 85px; */
+
+
+}
+.value-item .value-heading{
+  font-size: 29px;
+  color: white;
+  font-weight: 400;
+
+}
+.value-item-right .value-heading{
+  font-size: 29px;
+  color: white;
+  font-weight: 400;
+
+}
+.value-item .value-para{
+  font-family: Neue Haas Grotesk Display Pro;
+font-weight: 500;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0px;
+vertical-align: middle;
+color: #757171;
+width: 95%;
+}
+.value-item-right .value-para{
+  font-family: Neue Haas Grotesk Display Pro;
+font-weight: 500;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0px;
+vertical-align: middle;
+color: #757171;
+width: 65%;
+}
+.value-item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 11rem;
+  /* background-color: yellow; */
+}
+.value-item-right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* padding-left: 11rem; */
+}
+@media (max-width: 600px) {
+  .tab {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .subnav a {
+    font-size: 18px;
+  }
+
+  .value-item .value-heading,
+  .value-item-right .value-heading {
+    font-size: 22px;
+  }
+
+  .value-item .value-para,
+  .value-item-right .value-para {
+    font-size: 13px;
+  }
+}

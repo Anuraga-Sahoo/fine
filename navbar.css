@@ -1,0 +1,74 @@
+body {
+  padding-top: 66px; /* Avoids content going under the fixed navbar */
+  margin: 0;
+  background-color: black; /* Optional: set your background */
+  overflow-x: hidden;
+}
+ 
+.navbar {
+  position: fixed;
+  top: 20px;              
+  left: 43px;    
+  transform: translateX(10%);        
+  width: 946px;          
+  height: 85px;          
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 999;
+  border-radius: 20px;     /* Approximated corner radius */
+}
+ 
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+ 
+.logo img {
+  height: 32px;
+  margin-right: 0.5rem;
+}
+ 
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+ 
+/* Menu links */
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+ 
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+ 
+.menu a:hover {
+  color: #333333;
+}
+ 
+/* Sign-in button */
+.sign-in-btn {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+.sign-in-btn:hover {
+  background-color: #3a3a3a;
+}
+/* Navbar section end */

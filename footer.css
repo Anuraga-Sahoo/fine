@@ -1,0 +1,148 @@
+
+    .site-footer {
+  background-color: #121212;
+  color: #ccc;
+  padding: 74px 154px;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  width: -21px;
+  margin-left: 125px;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 36px;
+  font-size: 16px;
+}
+.pages{
+  margin-top: 46px;
+}
+.products{
+margin-top: 46px;
+}
+.legals{
+margin-top: 46px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -19px;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #00cc99;
+}
+
+.company-info p {
+  font-size: 14px;
+  color: #f3efef;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: #00cc99;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.call-link strong {
+  color: #fff; /* <-- makes the number white */
+  font-weight: 500;
+}
+
+.call-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00cc99;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 218px;
+  margin-bottom: -16px;
+  margin-top: 20px;
+}
+.footer-column-company-info{
+  margin-right: 5px;
+  margin-left: -70px;
+}
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
+  .site-footer {
+    padding: 16px 113px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .footer-logo {
+    width: 160px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column,
+  .footer-column-company-info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-column h4 {
+    margin-top: 20px;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 40px 20px;
+  }
+
+  .footer-logo {
+    width: 140px;
+  }
+
+  .footer-column h4 {
+    font-size: 15px;
+  }
+
+  .footer-column ul li a,
+  .contact-link,
+  .call-link {
+    font-size: 13px;
+  }
+}
