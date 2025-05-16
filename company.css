@@ -102,20 +102,53 @@ header {
 
 /* Main content styles */
 main {
-    padding: clamp(1.5rem, 5vw, 2.5rem) clamp(0.75rem, 3vw, 1.25rem) clamp(2rem, 6vw, 3.75rem);
+    padding: clamp(1.5rem, 5vw, 2.5rem) clamp(0.75rem, 3vw, 1.25rem) clamp(10rem, 6vw, 3.75rem);
     max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
+
 }
 
 /* Section styles */
-section {
+.tabs {
+display: flex;
+  justify-content: left;
+  margin-top: 0px;
+      gap: 1rem;
+    padding: 0 0 0 0;
+}
+
+.tab {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 0 10px;
+  border-radius: 14px;
+  height: 91px;
+  font-size: 25px;
+  cursor: pointer;
+  width: 222px;
+    border-radius: 30px;
+    transition: all ease 0.5s;
+}
+.tab:hover{
+  background-color: white;
+  color: black;
+}
+
+.tab.active {
+    background-color: white;
+    color: black;
+}
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: clamp(1rem, 4vw, 3.125rem);
-    margin-bottom: clamp(1rem, 4vw, 1.875rem);
+    gap: clamp(0.75rem, 3vw, 1.875rem);
+    align-items: center;
     flex-wrap: wrap;
+    font-size: x-large;
 }
 
 /* Headings styles */
@@ -164,7 +197,21 @@ h2 {
 }
 
 /* Button styles */
-.about-btn, .career-btn {
+.about-btn {
+    background-color: rgb(8, 8, 8);
+    border: 1.5px solid var(--border-color);
+    color: #fff;
+    padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.875rem);
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    height: auto;
+    min-height: 48px;
+    transition: all 0.3s ease;
+}
+.career-btn {
     background-color: rgb(8, 8, 8);
     border: 1.5px solid var(--border-color);
     color: #fff;
