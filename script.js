@@ -4,6 +4,7 @@ addEventListener("DOMContentLoaded", (event) => {
     runAnimationSequence(); // Run it first time immediately
     setInterval(runAnimationSequence, 8500); // Repeat every 7200ms
 
+
     function productEntrance(){
     document.getElementById("productEnterFace").addEventListener('click', ()=>{
         const banner = document.getElementById("banner")
@@ -94,3 +95,5 @@ function loadAnimation(time, showingElement, hidingElement){
         }
     }, time)
 }
+
+

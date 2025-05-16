@@ -1,61 +1,57 @@
+/* Responsive Navbar */
 body {
-  padding-top: 66px; /* Avoids content going under the fixed navbar */
+  padding-top: 66px;
   margin: 0;
-  background-color: black; /* Optional: set your background */
+  background-color: black;
   overflow-x: hidden;
 }
- 
+
 .navbar {
   position: fixed;
-  top: 20px;              
-  left: 43px;    
-  transform: translateX(10%);        
-  width: 946px;          
-  height: 85px;          
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 946px;
+  height: 85px;
   background-color: #0c0c0c;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   z-index: 999;
-  border-radius: 20px;     /* Approximated corner radius */
+  border-radius: 20px;
 }
- 
+
 /* Logo section */
 .logo {
   display: flex;
   align-items: center;
 }
- 
+
 .logo img {
   height: 32px;
   margin-right: 0.5rem;
 }
- 
-.logo span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
- 
+
 /* Menu links */
 .menu {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
- 
+
 .menu a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
- 
+
 .menu a:hover {
   color: #333333;
 }
- 
+
 /* Sign-in button */
 .sign-in-btn {
   background-color: #2a2a2a;
@@ -67,8 +63,114 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
- 
+
 .sign-in-btn:hover {
   background-color: #3a3a3a;
 }
-/* Navbar section end */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 95%;
+    padding: 0 1.5rem;
+  }
+  
+  .menu {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    top: 10px;
+    height: 70px;
+    padding: 0 1rem;
+  }
+  
+  .logo img {
+    height: 28px;
+  }
+  
+  .menu a {
+    font-size: 0.9rem;
+  }
+  
+  .sign-in-btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    top: 5px;
+    height: 60px;
+    border-radius: 15px;
+  }
+  
+  .logo img {
+    height: 24px;
+  }
+  
+  .menu {
+    gap: 1rem;
+  }
+  
+  .menu a {
+    font-size: 0.8rem;
+  }
+  
+  .sign-in-btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile Menu */
+@media (max-width: 360px) {
+  .navbar {
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    top: 0;
+  }
+  
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .menu a {
+    font-size: 0.8rem;
+  }
+  
+  body {
+    padding-top: 120px;
+  }
+}
+
+/* Optional: Add hamburger menu for smallest screens */
+@media (max-width: 320px) {
+  .menu {
+    display: none;
+  }
+  
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hamburger {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+}
+/* Add this to your HTML:
+<div class="hamburger">☰</div>
+*/
