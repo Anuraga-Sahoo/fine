@@ -8,7 +8,7 @@ body {
 }
 
 .team-section {
-  background-image: url('https://www.transparenttextures.com/patterns/zig-zag.png');
+  /* background-image: url('https://www.transparenttextures.com/patterns/zig-zag.png'); */
   background-size: auto;
   padding: 60px 40px;
   min-height: 100vh;
