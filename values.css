@@ -66,22 +66,25 @@ display: flex;
   justify-content: left;
   margin-top: 160px;
       gap: 1rem;
-    padding: 0 0 0 16rem;
+    padding: 0 0 0 13rem;
 }
 
 .tab {
+  display: inline-block;
   background-color: #111;
   color: white;
   border: none;
   padding: 10px 30px;
   margin: 0 10px;
-  border-radius: 14px;
+  border-radius: 30px;
   cursor: pointer;
   height: 91px;
   font-size: 25px;
   width: 222px;
-    border-radius: 30px;
-    transition: all ease 0.5s;
+  text-align: center;
+  line-height: 71px;
+  text-decoration: none;
+  transition: all ease 0.5s;
 }
 .tab:hover{
   background-color: white;
@@ -104,15 +107,12 @@ display: flex;
 .tab.active {
   background-color: white;
   color: black;
-  height: 91px;
-  font-size: 25px;
-    width: 222px;
-    border-radius: 30px;
+
 }
 
 /* Subnav */
 .subnav {
-  padding: 0 0 0 9rem;
+  padding: 0 0 0 3.7rem;
     text-align: left;
     margin: 105px 0 20px 150px;
       
