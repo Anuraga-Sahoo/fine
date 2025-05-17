@@ -1,3 +1,4 @@
+/* updated */
 /* General Reset and base styles */
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 * {
@@ -102,20 +103,54 @@ header {
 
 /* Main content styles */
 main {
-    padding: clamp(1.5rem, 5vw, 2.5rem) clamp(0.75rem, 3vw, 1.25rem) clamp(2rem, 6vw, 3.75rem);
+    padding: clamp(1.5rem, 5vw, 2.5rem) clamp(0.75rem, 3vw, 1.25rem) clamp(10rem, 6vw, 3.75rem);
     max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
 }
 
 /* Section styles */
-section {
+.tabs {
+display: flex;
+  justify-content: left;
+  margin-top: 0px;
+      gap: 1rem;
+    padding: 0 0 0 0;
+}
+
+.tab {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 0 10px;
+  border-radius: 14px;
+  height: 91px;
+  font-size: 25px;
+  cursor: pointer;
+  width: 222px;
+  border-radius: 30px;
+transition: all ease 0.5s;
+}
+.tab:hover{
+  background-color: white;
+  color: black;
+}
+
+.tab.active {
+    background-color: white;
+    color: black;
+}
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: clamp(1rem, 4vw, 3.125rem);
-    margin-bottom: clamp(1rem, 4vw, 1.875rem);
+    gap: clamp(0.75rem, 3vw, 1.875rem);
+    align-items: center;
     flex-wrap: wrap;
+    font-size: x-large;
 }
 
 /* Headings styles */
@@ -136,6 +171,7 @@ k {
     line-height: 1.5;
     color: #FFFFFF;
     display: block;
+    letter-spacing: 1px;
 }
 
 j {
@@ -164,7 +200,21 @@ h2 {
 }
 
 /* Button styles */
-.about-btn, .career-btn {
+.about-btn {
+    background-color: rgb(8, 8, 8);
+    border: 1.5px solid var(--border-color);
+    color: #fff;
+    padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.875rem);
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    height: auto;
+    min-height: 48px;
+    transition: all 0.3s ease;
+}
+.career-btn {
     background-color: rgb(8, 8, 8);
     border: 1.5px solid var(--border-color);
     color: #fff;
@@ -207,7 +257,30 @@ h2 {
     margin-top: clamp(0.5rem, 2vw, 0.625rem);
     max-width: 100%;
 }
-
+.subnav {
+  padding: 0 0 0 9rem;
+    text-align: left;
+    margin: 45px 0 20px -155px;
+      
+}
+.subnav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 23px;
+}
+.subnav .open {
+    color: #b3b3b3;
+    
+}
+.bar {
+    background-color: transparent;
+    height: fit-content;
+    border: 2px solid white;
+    border-bottom: 0px;
+    border-top: 0px;
+    padding: 2px;
+}
 /* Option button styles */
 .option-btn {
     background-color: #007bff;
@@ -238,25 +311,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.career-banner-section img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-    border-bottom: 1.5px solid #7fffd4;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.career-banner-section h3 {
-    color: #7fffd4;
-    font-weight: 700;
-    font-size: clamp(1rem, 3.5vw, 1.25rem);
-    padding: clamp(0.75rem, 2.5vw, 0.938rem) clamp(0.5rem, 2vw, 0.625rem);
-    user-select: none;
-    margin: 0;
 }
 
 /* Layout for financial services */
@@ -305,6 +359,8 @@ h2 {
     font-size: clamp(0.875rem, 3vw, 1rem);
     font-weight: bolder;
     color: #b3b3b3;
+     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
 }
 
 .financial-services ul li .haha {

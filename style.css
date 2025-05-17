@@ -685,7 +685,7 @@ top: 52rem;
 .dataPrivacy{
     /* background-color: red; */
     position: relative;
-    top: 66rem;
+    top: 80rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -696,7 +696,7 @@ top: 52rem;
     padding: 30px;
 }
 .dataPrivacyImage{
-    height: 10rem;
+    height: 8rem;
 }
 .textContainer{
     /* background-color: red; */
@@ -718,7 +718,115 @@ top: 52rem;
     width: 70%;
 }
 
+/* what we offer */
+.whatWeOffer{
+    position: relative;
+     top: 90rem;
+     display: flex;
+     flex-direction: column;
+     gap: 4rem;
+     /* justify-content: center; */
+     align-items: center;
+}
+.whatWeOfferHead{
+    color: white;
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+.whatWeOfferImageGroup{}
+.whatweOfferBackground{
+     height: 35rem;
+     
+}
+.godImg{
+    height: 20rem;
+    position: relative;
+    bottom: 21rem;
+    left: 55rem;
+}
+.whatWeOfferCard{
+    height: 20rem;
+    position: relative;
+    bottom: 28rem;
+    /* left: 55rem; */
+
+}
 
 
+
+
+
+
+
+
+
+/* why choose us section */
+.chooseUsSection{
+    /* background-color: red; */
+    top: 80rem;
+    position: relative;
+    padding: 10rem;
+    /* display: flex; */
+    /* justify-content: center;
+    flex-direction: column; */
+    /* align-items: center; */
+    
+}
+.chooseUsHeading{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 4rem 0;
+}
+.AnimatedParaUl li{
+ color: #787878;
+ font-size: 2.5rem;
+ width: 95%;
+ /* background-color: blue; */
+ animation: highlight 4s infinite ease-in;
+ transition: all ease 0.6s;
+
+}
+.AnimatedParali:nth-child(1) { animation-delay: 0s;
+ color: #787878;
+ }
+.AnimatedParali:nth-child(2) { animation-delay: 1s;
+ color: #787878;
+ }
+.AnimatedParali:nth-child(3) { animation-delay: 2s;
+ color: #787878;
+ }
+.AnimatedParali:nth-child(4) { animation-delay: 3s;
+ color: #787878;
+ }
+
+@keyframes highlight {
+  0% { color: white; 
+ transition: all ease 0.6s;
+}
+  25% { color: #9b9b9b; }
+  50% { color: #b9b9b9; }
+  100% { color: #787878;
+ transition: all ease 0.6s;
+ }
+}
+/* .AnimatedParaUl li:hover{
+    color: white;
+} */
+.AnimatedParaUl{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #0EE28E; */
+    margin-left: 4rem;
+}
+
+
+/* footer section */
+.site-footer{
+    position: relative;
+    top: 71rem;
+}
 
 

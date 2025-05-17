@@ -33,28 +33,27 @@
     <main>
       <br><br><br><br><br>
         <!-- Section with About and Career buttons -->
-        <section>
-            <!-- Link wrapping About FinE button -->
-            <a href="./company.html">
-                <button class="about-btn" style="width: 112%; height: 60px;">About FinE</button>
-            </a>
-            
-            <!-- Career button -->
-            <a href="./jobOpenings.html">
-                <button class="career-btn" style="width: 142%; height: 60px;">Career</button>
-            </a>
-        </section>
+        <div class="tabs">
+    <a href="./company.html">
+    <button class="tab">About FinE</button></a>
+
+    <a href="./jobOpenings.html">
+    <button class="tab active">Career</button></a>
+  </div>
         <!-- Spacer using line breaks -->
         <br><br><br>
-        <section class="Career">
-    <nav>
-    <ul>
-                <li><a href="./jobOpenings.html" class="nav-link" id="opening-link">OPENING</a></li> 
-                <li><span class="Barr"><a href="./Value.html">VALUES</a></span></li> 
-                <li><span class="white">TEAM</span></li>
-            </ul>
-            </nav>
-                </section>
+        <div class="subnav">
+
+      <a href="./jobOpenings.html" class="open">OPENING</a>
+
+    <!-- <div class="bar"> -->
+      <span class="bar">
+      <a href="./Value.html" class="value-active">VALUES</a>
+      </span>
+    <!-- </div> -->
+    <a href="team.html">TEAM</a>
+  </div>
+
             <input type="text" class="Searchbar" placeholder="Seek and you shall find" value>
     </div>
 
@@ -141,7 +140,7 @@
     </div>
 
     <div class="footer-column">
-     <div class="products"> <h4>Products</h4></div>
+     <div class="footerProducts"> <h4>Products</h4></div>
       <ul>
         <li><a href="#">Fiversity</a></li>
         <li><a href="#">Nova</a></li>

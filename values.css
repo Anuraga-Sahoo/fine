@@ -73,10 +73,15 @@ display: flex;
   border: none;
   padding: 10px 30px;
   margin: 0 10px;
+<<<<<<< HEAD
   border-radius: 30px;
   cursor: pointer;
+=======
+  border-radius: 14px;
+>>>>>>> 95a55d71347089dc78719f1e0cb4f7104e2c31ac
   height: 91px;
   font-size: 25px;
+  cursor: pointer;
   width: 222px;
   text-align: center;
   line-height: 71px;

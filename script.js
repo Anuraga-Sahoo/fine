@@ -4,6 +4,8 @@ addEventListener("DOMContentLoaded", (event) => {
     runAnimationSequence(); // Run it first time immediately
     setInterval(runAnimationSequence, 8500); // Repeat every 7200ms
 
+
+
     function productEntrance(){
     document.getElementById("productEnterFace").addEventListener('click', ()=>{
         const banner = document.getElementById("banner")
@@ -60,6 +62,8 @@ productEntrance()
             // banner.setAttribute("alt", "finversity");
             // banner.setAttribute("src", "./img/finversitybanner.svg")
             banner.style.display="none" 
+        button.style.display="none"
+
                 //    button.style.zIndex= "-1"
             productEntrance()
         // banner.style.opacity = 0
@@ -94,3 +98,5 @@ function loadAnimation(time, showingElement, hidingElement){
         }
     }, time)
 }
+
+
