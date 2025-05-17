@@ -685,7 +685,7 @@ top: 52rem;
 .dataPrivacy{
     /* background-color: red; */
     position: relative;
-    top: 66rem;
+    top: 80rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -696,7 +696,7 @@ top: 52rem;
     padding: 30px;
 }
 .dataPrivacyImage{
-    height: 10rem;
+    height: 8rem;
 }
 .textContainer{
     /* background-color: red; */
@@ -718,6 +718,40 @@ top: 52rem;
     width: 70%;
 }
 
+/* what we offer */
+.whatWeOffer{
+    position: relative;
+     top: 90rem;
+     display: flex;
+     flex-direction: column;
+     gap: 4rem;
+     /* justify-content: center; */
+     align-items: center;
+}
+.whatWeOfferHead{
+    color: white;
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+.whatWeOfferImageGroup{}
+.whatweOfferBackground{
+     height: 35rem;
+     
+}
+.godImg{
+    height: 20rem;
+    position: relative;
+    bottom: 21rem;
+    left: 55rem;
+}
+.whatWeOfferCard{
+    height: 20rem;
+    position: relative;
+    bottom: 28rem;
+    /* left: 55rem; */
+
+}
+
 
 
 
@@ -729,7 +763,7 @@ top: 52rem;
 /* why choose us section */
 .chooseUsSection{
     /* background-color: red; */
-    top: 70rem;
+    top: 80rem;
     position: relative;
     padding: 10rem;
     /* display: flex; */
@@ -794,4 +828,5 @@ top: 52rem;
     position: relative;
     top: 71rem;
 }
+
 
