@@ -15,12 +15,9 @@ body {
 }
 .top{
   
-  background-image: url('./img/backgroundImg.png');
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  /* background-image: url('./img/backgroundImg.png'); */
+    /* background-color: black; */
+    
 /* opacity: 0.5; */
 }
 .top::before{
@@ -102,6 +99,15 @@ display: flex;
 }
 .value-active{
   color: #757171 !important;
+}
+.ValuesBackground{
+ width: 100%;
+ background-image: url(./img/backgroundImg.png);
+ background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding-top: 10rem; */
 }
 
 .tab.active {
