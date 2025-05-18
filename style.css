@@ -9,15 +9,15 @@ body{
 }
 /* Nav bar section */
 
-header{
+.header{
     /* background: url("./img/backgroundImg.png"); */
     width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     position: relative;
-    /* overflow: hidden; */
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
+    /* overflow-y: hidden;*/
+    /* overflow-x: hidden;  */
 }
 .imgContainer{
     /* background-color: red; */
@@ -736,20 +736,63 @@ top: 52rem;
 .whatWeOfferImageGroup{}
 .whatweOfferBackground{
      height: 35rem;
-     
+}
+.offerZoomOut{
+     animation: OfferZoomOut 3s infinite ease;
+
+}
+.offerZoomIn{
+     animation: OfferZoomIn 3s infinite ease;
+
 }
 .godImg{
     height: 20rem;
     position: relative;
     bottom: 21rem;
     left: 55rem;
+     animation: OfferAppear 3s infinite ease;
 }
 .whatWeOfferCard{
     height: 20rem;
     position: relative;
     bottom: 28rem;
+    animation: OfferAppear 3s infinite linear;
     /* left: 55rem; */
 
+}
+
+@keyframes OfferZoomOut{
+    0%{
+        transform: scale(1.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes offerZoomIn {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(5);
+    }
+}
+@keyframes OfferAppear {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
