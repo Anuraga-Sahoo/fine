@@ -514,7 +514,7 @@ ul {
     width: 100%;
     max-width: 337px;
     height: clamp(3rem, 10vw, 4.44rem);
-    border: 1px solid gray;
+    border: 1px solid rgb(221, 216, 216);
     border-radius: 5px;
     cursor: pointer;
     background-color: black;
