@@ -6,71 +6,29 @@ addEventListener("DOMContentLoaded", (event) => {
 
 
 // pRODUCT PAGE CLICK aNIMATION 
-    function productEntrance(){
-    document.getElementById("productEnterFace").addEventListener('click', ()=>{
-        const banner = document.getElementById("banner")
-        const buttonLink = document.getElementById("buttonLink")
-        const button = document.getElementById("button")
-        // if(banner.alt === ""){
+const slides = document.querySelectorAll(".image-slide");
+const section = document.querySelector(".scroll-section");
+const totalSlides = slides.length;
 
-        banner.setAttribute("alt", "finversity");
-        banner.setAttribute("src", "./img/finversitybanner.svg")
-        banner.style.opacity = 1
-        banner.style.display = "block"
-        button.style.display="block"
-        buttonLink.setAttribute("href", "https://www.fineforindia.in")
-        buttonLink.style.opacity = 1
-        buttonLink.style.zIndex = 1
-        button.style.right = "-48rem";
-        button.style.top = "-12rem";
+window.addEventListener("scroll", () => {
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const scrollY = window.scrollY;
 
-        // }
+  // Check if user is in the section
+  if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+    const scrollPos = scrollY - sectionTop;
+    const percentScrolled = scrollPos / sectionHeight;
+    const index = Math.min(
+      totalSlides - 1,
+      Math.floor(percentScrolled * totalSlides)
+    );
 
-    })
-}
-productEntrance()
-
-    document.getElementById("banner").addEventListener("click", ()=>{
-        const banner = document.getElementById("banner")
-        const buttonLink = document.getElementById("buttonLink")
-        const button = document.getElementById("button")
-
-        if(banner.alt === "finversity"){
-            banner.setAttribute("alt", "nova");
-        banner.setAttribute("src", "./img/NovaBanner.svg")
-        banner.style.opacity = 1
-        buttonLink.setAttribute("href", "https://novawealth.in/")
-        buttonLink.style.opacity = 1
-        button.style.right = "-9.2rem";
-        button.style.top = "-11rem";
-
-        console.log(banner.alt)
-        }
-
-        else if(banner.alt === "nova"){
-            banner.setAttribute("alt", "nebulaone");
-        banner.setAttribute("src", "./img/NebulaOneBanner.svg")
-        banner.style.opacity = 1
-        buttonLink.setAttribute("href", "https://www.nebulaone.in/")
-        buttonLink.style.opacity = 1
-        button.style.right = "-44.2rem";
-        button.style.top = "-9rem";
-        
-        console.log(banner.alt)
-        }
-        else if(banner.alt === "nebulaone"){
-            // banner.setAttribute("alt", "finversity");
-            // banner.setAttribute("src", "./img/finversitybanner.svg")
-            banner.style.display="none" 
-        button.style.display="none"
-
-                //    button.style.zIndex= "-1"
-            productEntrance()
-        // banner.style.opacity = 0
-        // // buttonLink.setAttribute("href", "https://www.fineforindia.in")
-        // buttonLink.style.opacity = 0
-        }
-    })
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+});
 
 // pRODUCT PAGE CLICK aNIMATION  END
 // what we offer Animation
