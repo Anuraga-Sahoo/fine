@@ -414,25 +414,24 @@ position: absolute;
 .eightthCircle{
     height: 77.5rem;
         /* height: 100rem; */
-        margin: 0 0 0 30rem;
+        margin: 0 0 0 40rem;
         transform: rotate(20deg);
-    animation: rotateback 1s ease-out ;
+    animation: rotateback 1s ease-out;
 }
-.tagLine{
-    font-size: 4rem;
-     position: relative;
-    top: 10px;
-    right: 836px;
-    background: linear-gradient(to right, #0EE28E, #493FD6 , #FFFFFF);
-    -webkit-background-clip: text;
-    color: transparent;
-    z-index: 1;
-    background-color: red;
-    animation: zoomout 0.9s ease-in ;
+.tagLine {
+  font-size: 4rem;
+  position: relative;
+  top: 10px;
+  right: 940px;
+  background: linear-gradient(to right, #0EE28E, #493FD6, #FFFFFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap; /* Prevent unwanted wrapping */
+  animation: zoomout 0.9s ease-in;
 }
-.spanbox{
-    width: 100%;
-}
+
 @keyframes zoomout {
     0%{
         transform: scale(1.9);
