@@ -1,0 +1,107 @@
+ @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+ 
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+                 font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+                 /* color: white; */
+
+        }
+        body{
+            background: url("./img/backgroundImg.png");
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .effective-date-span{
+            color: white;
+            font-size: larger;
+        }
+
+        .effective-date {
+            color: #AFAFAF;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 500;
+        }
+
+        .intro-text {
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #AFAFAF;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: white;
+            padding-bottom: 0.5rem;
+        }
+
+        .content {
+            line-height: 1.6;
+            color: #AFAFAF;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem auto;
+                padding: 0 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .content {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            ul {
+                margin-left: 1.5rem;
+            }
+        }
