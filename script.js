@@ -5,7 +5,7 @@ addEventListener("DOMContentLoaded", (event) => {
     setInterval(runAnimationSequence, 8500); // Repeat every 7200ms
 
 
-
+// pRODUCT PAGE CLICK aNIMATION 
     function productEntrance(){
     document.getElementById("productEnterFace").addEventListener('click', ()=>{
         const banner = document.getElementById("banner")
@@ -72,6 +72,9 @@ productEntrance()
         }
     })
 
+// pRODUCT PAGE CLICK aNIMATION  END
+// what we offer Animation
+// whatWeOfferAnimation(10000)
     
 })
 
@@ -96,6 +99,16 @@ function loadAnimation(time, showingElement, hidingElement){
         if (hideEl) {
             hideEl.style.display = "none";
         }
+    }, time)
+}
+
+function whatWeOfferAnimation(time){
+    setTimeout(()=>{
+        const offerBackground = document.getElementById("whatWeOfferBackground")
+        offerBackground.classList.add("offerZoomIn")
+        offerBackground.classList.remove("offerZoomOut")
+
+        // offerBackground.removeAttribute("class","offerZoomOut")
     }, time)
 }
 

@@ -118,7 +118,7 @@ display: flex;
   justify-content: left;
   margin-top: 0px;
       gap: 1rem;
-    padding: 0 0 0 0;
+    padding: 0 0 0 6px;
 }
 
 .tab {
@@ -260,14 +260,14 @@ h2 {
 .subnav {
   padding: 0 0 0 9rem;
     text-align: left;
-    margin: 45px 0 20px -155px;
+    margin: 29px 0 20px -136px;
       
 }
 .subnav a {
     color: white;
     margin: 0 20px;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 25px;
 }
 .subnav .open {
     color: #b3b3b3;
