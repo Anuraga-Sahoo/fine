@@ -14,6 +14,10 @@ window.addEventListener("scroll", () => {
   const sectionTop = section.offsetTop;
   const sectionHeight = section.offsetHeight;
   const scrollY = window.scrollY;
+  console.log("scrolly",scrollY)
+  console.log("sectionTop",sectionTop)
+  console.log("sectionHeight",sectionHeight)
+
 
   // Check if user is in the section
   if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -33,6 +37,27 @@ window.addEventListener("scroll", () => {
 // pRODUCT PAGE CLICK aNIMATION  END
 // what we offer Animation
 // whatWeOfferAnimation(10000)
+
+// hamburger menue
+
+  document.querySelector('.hamburger').addEventListener('click', function(e) {
+    e.stopPropagation();
+    document.querySelector('.menu').classList.toggle('active');
+  });
+
+  document.addEventListener('click', function(e) {
+    const menu = document.querySelector('.menu');
+    const hamburger = document.querySelector('.hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('active');
+    }
+  });
+
+  document.querySelectorAll('.menu a, .sign-in-btn').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelector('.menu').classList.remove('active');
+    });
+  });
     
 })
 
