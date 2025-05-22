@@ -128,12 +128,9 @@ display: flex;
   margin: 4rem 0 0 0;
   /* background-color: red; */
   position: absolute;
-  top: 36rem;
-  left: 49rem;
+  top: 33rem;
+  left: 40rem;
 
-}
-.temp-img{
-  
 }
 .subnav a {
   color: white;
@@ -167,14 +164,14 @@ display: flex;
   line-height: 76px;
   letter-spacing: 0px;
   vertical-align: middle;
-  margin-right: 28rem
+  margin-right: 30rem
 }
 
 .hero-image img {
-  max-width: 445.79px;
-  left: 604px;
-  top: 678px;
-  height: 521px;
+  max-width: 792px;
+  left:400px;
+  top: 978px;
+  height: 565px;
 
 }
 
@@ -208,7 +205,7 @@ display: flex;
   margin-top: 15rem;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 9rem;
 }
 .left-container{
   width: 40%; 
@@ -280,19 +277,74 @@ width: 65%;
   flex-direction: column;
   /* padding-left: 11rem; */
 }
-@media (max-width: 600px) {
+/* ============================= */
+/*      RESPONSIVE DESIGN       */
+/* ============================= */
+
+/* Tablets & smaller screens */
+@media (max-width: 1024px) {
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 2rem;
+    margin-top: 100px;
+  }
+
   .tab {
-    width: 100%;
-    font-size: 18px;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    height: auto;
+    line-height: normal;
+    margin: 5px;
+  }
+
+  .subnav {
+    margin: 80px 0 20px 2rem;
+    padding: 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
   .hero-text h1 {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
   }
 
-  .subnav a {
-    font-size: 18px;
+  .hero-image {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    width: 90%;
+    height: auto;
+  }
+
+  .values-section {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 20px;
+    margin-top: 6rem;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    padding: 0 2rem;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .value-item,
+  .value-item-right {
+    padding: 0;
   }
 
   .value-item .value-heading,
@@ -303,5 +355,82 @@ width: 65%;
   .value-item .value-para,
   .value-item-right .value-para {
     font-size: 13px;
+    width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .sign-in {
+    align-self: flex-start;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 80px;
+  }
+
+  .tab {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .subnav {
+    margin: 50px 0 10px 1rem;
+    font-size: 20px;
+  }
+
+  .values-section {
+    margin-top: 4rem;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .value-item .value-heading,
+  .value-item-right .value-heading {
+    font-size: 20px;
+  }
+
+  .value-item .value-para,
+  .value-item-right .value-para {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .footer-column,
+  .footer-column-company-info {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 120px;
   }
 }
