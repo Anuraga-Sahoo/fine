@@ -537,45 +537,181 @@ ul {
 
 
 /* ---- responsive adjustments ---- */
-@media (max-width: 992px) {
-  .links {
-    gap: 40px;
+/* Add these media queries at the end of your CSS file */
+
+@media (max-width: 1200px) {
+  .navbar {
+    max-width: 800px;
+    height: 75px;
+    padding: 0 1.5rem;
+  }
+  
+  .tab {
+    width: 200px;
+    height: 80px;
+    font-size: 22px;
   }
 }
 
-@media (max-width: 768px) {
-  .site-footer .wrapper {
-    flex-direction: column;
+@media (max-width: 992px) {
+  .navbar {
+    max-width: 700px;
+    height: 70px;
   }
   
-  .links {
-    margin-top: 40px;
-    justify-content: flex-start;
-    width: 100%;
+  .menu {
+    gap: 1.5rem;
   }
   
-  .brand-block {
+  .tab {
+    width: 180px;
+    height: 70px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .financial-services ul li {
     max-width: 100%;
   }
 }
 
-@media (max-width: 576px) {
-  .links {
-    flex-wrap: wrap;
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
   }
   
-  .col {
-    flex: 0 0 40%;
+  .navbar {
+    max-width: 90%;
+    height: 60px;
+    top: 10px;
+    padding: 0 1rem;
+  }
+  
+  .logo img {
+    height: 24px;
+  }
+  
+  .menu {
+    gap: 1rem;
+  }
+  
+  .menu a {
+    font-size: 0.9rem;
+  }
+  
+  .sign-in-btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .tabs {
+    justify-content: left;
+  }
+  
+  .tab {
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  
+  .aboutfine k {
+    font-size: 14px;
+    padding: 0 1rem;
+  }
+  
+  .platform-products {
+    padding: 0 1rem;
+  }
+  
+  .financial-services {
+    padding: 0 1rem;
+  }
+  
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 50px;
+    border-radius: 15px;
+  }
+  
+  .menu {
+    gap: 0.8rem;
+  }
+  
+  .menu a {
+    font-size: 0.8rem;
+  }
+  
+  .sign-in-btn {
+    padding: 0.2rem 0.8rem;
+  }
+  
+  .tab {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  
+  .aboutfine k {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .platform-products {
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+  
+  .financial-services ul li .haha {
+    font-size: 13px;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  
+  .footer-column {
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .links {
-    flex-direction: column;
-    gap: 30px;
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.5rem;
+    top: 5px;
   }
   
-  .col {
-    width: 100%;
+  .menu {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .tab {
+    width: 9rem;
+    max-width: 300px;
+    margin: 5px 0;
+  }
+  
+  .tabs {
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .aboutfine k {
+    font-size: 12px;
+  }
+  
+  .financial-services ul li .haha {
+    font-size: 12px;
   }
 }
