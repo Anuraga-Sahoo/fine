@@ -113,15 +113,15 @@ main {
 }
 
 /* Section styles */
-.tabs {
+/* .tabs {
 display: flex;
   justify-content: left;
   margin-top: 0px;
       gap: 1rem;
     padding: 0 0 0 6px;
-}
+} */
 
-.tab {
+/* .tab {
   background-color: #111;
   color: white;
   border: none;
@@ -134,16 +134,16 @@ display: flex;
   width: 222px;
   border-radius: 30px;
 transition: all ease 0.5s;
-}
-.tab:hover{
+} */
+/* .tab:hover{
   background-color: white;
   color: black;
-}
+} */
 
-.tab.active {
+/* .tab.active {
     background-color: white;
     color: black;
-}
+} */
 nav ul {
     list-style: none;
     display: flex;
@@ -257,13 +257,13 @@ h2 {
     margin-top: clamp(0.5rem, 2vw, 0.625rem);
     max-width: 100%;
 }
-.subnav {
+/* .subnav {
   padding: 0 0 0 9rem;
     text-align: left;
     margin: 29px 0 20px -136px;
       
-}
-.subnav a {
+} */
+/* .subnav a {
     color: white;
     margin: 0 20px;
     text-decoration: none;
@@ -272,7 +272,7 @@ h2 {
 .subnav .open {
     color: #b3b3b3;
     
-}
+} */
 .bar {
     background-color: transparent;
     height: fit-content;
@@ -311,6 +311,14 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* input section */
+.inputSection{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
 }
 
 /* Layout for financial services */
@@ -581,10 +589,11 @@ ul {
   }
   
   .navbar {
-    max-width: 90%;
+    max-width: 80%;
     height: 60px;
     top: 10px;
     padding: 0 1rem;
+    left: 160px;
   }
   
   .logo img {
@@ -614,10 +623,17 @@ ul {
     font-size: 18px;
     margin: 0 5px;
   }
+  .inputSection{
+    padding: 0 0 0 4rem;
+  }
   
   .brand-block {
     max-width: 100%;
   }
+  .cards-container {
+    justify-content: center;
+    gap: 1rem;
+}
 }
 
 @media (max-width: 576px) {
@@ -627,6 +643,10 @@ ul {
   
   .col {
     flex: 0 0 40%;
+  }
+  .inputSection{
+    justify-content: center;
+    padding: 0;
   }
 }
 

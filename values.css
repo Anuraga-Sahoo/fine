@@ -164,7 +164,7 @@ display: flex;
   line-height: 76px;
   letter-spacing: 0px;
   vertical-align: middle;
-  margin-right: 30rem
+  margin-right: 30rem;
 }
 
 .hero-image img {
@@ -283,20 +283,26 @@ width: 65%;
 
 /* Tablets & smaller screens */
 @media (max-width: 1024px) {
+  .br{
+    display: none;
+  }
   .tabs {
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 2rem;
     margin-top: 100px;
   }
 
   .tab {
-    width: auto;
+    
     padding: 10px 20px;
     font-size: 20px;
-    height: auto;
     line-height: normal;
     margin: 5px;
+    display: flex;
+        justify-content: center;
+        height: 4rem;
+        align-items: center;
   }
 
   .subnav {
@@ -323,8 +329,9 @@ width: 65%;
   }
 
   .hero-image img {
-    width: 90%;
+    width: 100%;
     height: auto;
+    margin-top: -6rem;
   }
 
   .values-section {
@@ -361,17 +368,13 @@ width: 65%;
 
 /* Mobile devices */
 @media (max-width: 600px) {
+  .br{
+    display: none;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
   }
 
   .sign-in {
@@ -379,8 +382,8 @@ width: 65%;
   }
 
   .hero-text h1 {
-    font-size: 28px;
-    line-height: 40px;
+            font-size: 25px;
+        line-height: 24px;
   }
 
   .tabs {
@@ -394,17 +397,28 @@ width: 65%;
     width: 80%;
     text-align: center;
     font-size: 18px;
+    display: flex;
+     justify-content: center;
+     height: 4rem;
+    align-items: center;
   }
 
   .subnav {
     margin: 50px 0 10px 1rem;
     font-size: 20px;
+        display: flex;
+        align-items: center;
+                justify-content: center;
+  }
+  .subnav a{
+    font-size: 15px;
   }
 
   .values-section {
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 0 1rem;
     gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .value-item .value-heading,
