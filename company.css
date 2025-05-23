@@ -113,15 +113,15 @@ main {
 }
 
 /* Section styles */
-.tabs {
+/* .tabs {
 display: flex;
   justify-content: left;
   margin-top: 0px;
       gap: 1rem;
     padding: 0 0 0 6px;
-}
+} */
 
-.tab {
+/* .tab {
   background-color: #111;
   color: white;
   border: none;
@@ -134,16 +134,16 @@ display: flex;
   width: 222px;
   border-radius: 30px;
 transition: all ease 0.5s;
-}
-.tab:hover{
+} */
+/* .tab:hover{
   background-color: white;
   color: black;
-}
+} */
 
-.tab.active {
+/* .tab.active {
     background-color: white;
     color: black;
-}
+} */
 nav ul {
     list-style: none;
     display: flex;
@@ -257,13 +257,13 @@ h2 {
     margin-top: clamp(0.5rem, 2vw, 0.625rem);
     max-width: 100%;
 }
-.subnav {
+/* .subnav {
   padding: 0 0 0 9rem;
     text-align: left;
     margin: 29px 0 20px -136px;
       
-}
-.subnav a {
+} */
+/* .subnav a {
     color: white;
     margin: 0 20px;
     text-decoration: none;
@@ -272,7 +272,7 @@ h2 {
 .subnav .open {
     color: #b3b3b3;
     
-}
+} */
 .bar {
     background-color: transparent;
     height: fit-content;
@@ -311,6 +311,14 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* input section */
+.inputSection{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
 }
 
 /* Layout for financial services */
@@ -514,7 +522,7 @@ ul {
     width: 100%;
     max-width: 337px;
     height: clamp(3rem, 10vw, 4.44rem);
-    border: 1px solid gray;
+    border: 1px solid rgb(221, 216, 216);
     border-radius: 5px;
     cursor: pointer;
     background-color: black;
@@ -581,10 +589,11 @@ ul {
   }
   
   .navbar {
-    max-width: 90%;
+    max-width: 80%;
     height: 60px;
     top: 10px;
     padding: 0 1rem;
+    left: 160px;
   }
   
   .logo img {
@@ -614,104 +623,40 @@ ul {
     font-size: 18px;
     margin: 0 5px;
   }
-  
-  .aboutfine k {
-    font-size: 14px;
-    padding: 0 1rem;
+  .inputSection{
+    padding: 0 0 0 4rem;
   }
   
-  .platform-products {
-    padding: 0 1rem;
+  .brand-block {
+    max-width: 100%;
   }
-  
-  .financial-services {
-    padding: 0 1rem;
-  }
-  
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .cards-container {
+    justify-content: center;
+    gap: 1rem;
+}
 }
 
 @media (max-width: 576px) {
-  .navbar {
-    height: 50px;
-    border-radius: 15px;
+  .links {
+    flex-wrap: wrap;
   }
   
-  .menu {
-    gap: 0.8rem;
+  .col {
+    flex: 0 0 40%;
   }
-  
-  .menu a {
-    font-size: 0.8rem;
-  }
-  
-  .sign-in-btn {
-    padding: 0.2rem 0.8rem;
-  }
-  
-  .tab {
-    width: 140px;
-    height: 50px;
-    font-size: 16px;
-    border-radius: 25px;
-  }
-  
-  .aboutfine k {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-  
-  .platform-products {
-    font-size: 14px;
-    margin: 1rem 0;
-  }
-  
-  .financial-services ul li .haha {
-    font-size: 13px;
-  }
-  
-  .footer-container {
-    grid-template-columns: 1fr;
-    padding: 2rem;
-  }
-  
-  .footer-column {
-    margin-bottom: 2rem;
+  .inputSection{
+    justify-content: center;
+    padding: 0;
   }
 }
 
 @media (max-width: 480px) {
-  .navbar {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 0.5rem;
-    top: 5px;
+  .links {
+    flex-direction: column;
+    gap: 30px;
   }
   
-  .menu {
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  .tab {
-    width: 9rem;
-    max-width: 300px;
-    margin: 5px 0;
-  }
-  
-  .tabs {
-    /* flex-direction: column; */
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .aboutfine k {
-    font-size: 12px;
-  }
-  
-  .financial-services ul li .haha {
-    font-size: 12px;
+  .col {
+    width: 100%;
   }
 }
