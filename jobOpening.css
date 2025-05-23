@@ -112,46 +112,6 @@ main {
 
 }
 
-/* Section styles */
-/* .tabs {
-display: flex;
-  justify-content: left;
-  margin-top: 0px;
-      gap: 1rem;
-    padding: 0 0 0 6px;
-} */
-
-/* .tab {
-  background-color: #111;
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  margin: 0 10px;
-  border-radius: 14px;
-  height: 91px;
-  font-size: 25px;
-  cursor: pointer;
-  width: 222px;
-  border-radius: 30px;
-transition: all ease 0.5s;
-} */
-/* .tab:hover{
-  background-color: white;
-  color: black;
-} */
-
-/* .tab.active {
-    background-color: white;
-    color: black;
-} */
-/* nav ul {
-    list-style: none;
-    display: flex;
-    gap: clamp(0.75rem, 3vw, 1.875rem);
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: x-large;
-} */
 
 /* Headings styles */
 h1 {
@@ -237,18 +197,7 @@ h2 {
     transition: all 0.6s ease;
 }
 
-/* Navigation link style */
-/* .nav-link {
-    color: #777;
-    text-decoration: none;
-    transition: color 0.3s ease;
-} */
 
-/* .nav-link.active {
-    color: white;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-} */
 
 /* Career options styles */
 .career-options {
@@ -257,22 +206,7 @@ h2 {
     margin-top: clamp(0.5rem, 2vw, 0.625rem);
     max-width: 100%;
 }
-/* .subnav {
-  padding: 0 0 0 9rem;
-    text-align: left;
-    margin: 29px 0 20px -136px;
-      
-} */
-/* .subnav a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-size: 25px;
-}
-.subnav .open {
-    color: #b3b3b3;
-    
-} */
+
 .bar {
     background-color: transparent;
     height: fit-content;
@@ -562,14 +496,6 @@ ul {
 }
 
 @media (max-width: 992px) {
-  /* .navbar {
-    max-width: 700px;
-    height: 70px;
-  } */
-  
-  /* .menu {
-    gap: 1.5rem;
-  } */
   
   .tab {
     /* width: 180px; */
@@ -584,45 +510,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    padding-top: 60px;
-  } */
-  
-  /* .navbar {
-    max-width: 80%;
-    height: 60px;
-    top: 10px;
-    padding: 0 1rem;
-    left: 160px;
-  }
-  
-  .logo img {
-    height: 24px;
-  }
-  
-  .menu {
-    gap: 1rem;
-  } */
-  
-  /* .menu a {
-    font-size: 0.9rem;
-  } */
-  
-  /* .sign-in-btn {
-    padding: 0.3rem 1rem;
-    font-size: 0.9rem;
-  } */
-  
-  /* .tabs {
-    justify-content: left;
-  } */
-  
-  .tab {
-    /* width: 160px; */
-    /* height: 60px;
-    font-size: 18px;
-    margin: 0 5px; */
-  }
+
   .inputSection{
     padding: 0 0 0 4rem;
   }
