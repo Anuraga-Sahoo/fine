@@ -174,7 +174,7 @@ body {
 @media (max-width: 1024px) {
   .team-heading h1 {
     font-size: 42px;
-    margin-left: 100px;
+    margin-left: -5px;
   }
 
   .team-container {
@@ -188,22 +188,16 @@ body {
   }
 }
 
-/* Mobile devices */
-@media (max-width: 768px) {
-  .team-heading h1 {
-    font-size: 36px;
-    margin-left: 40px;
-    text-align: center;
-  }
-
+@media (max-width: 992px) {
   .team-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    padding: 0 20px;
+   
   }
 
-  .team-member img {
-    width: 120px;
-    height: 120px;
+  .team-member img,
+  .team-member::before {
+    width: 150px;
+    height: 150px;
   }
 
   .team-member h3 {
@@ -213,44 +207,35 @@ body {
   .team-member p {
     font-size: 13px;
   }
-
-  .team-member::before {
-    width: 120px;
-    height: 120px;
-  }
 }
 
-/* Extra small devices (phones) */
-@media (max-width: 480px) {
-  .team-heading h1 {
-    font-size: 35px;
-    margin-left: 20px;
-    margin-bottom: 31px;
-  }
+@media (max-width: 767px) {
+  .team-container {
+        gap: 73px;
+        padding: 0 10px;
+        grid-template-columns: auto;  
+      }
+      .br{
+        display: none;
+      }
 
-  .team-member img {
-    width: 100px;
-    height: 100px;
-  }
-
+  .team-member img,
   .team-member::before {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .team-member h3 {
-    font-size: 14px;
+    font-size: 15px;
+  }
+  .team-heading h1{
+        margin: 0 0 66px 0;
+
   }
 
   .team-member p {
     font-size: 12px;
   }
-
-  .team-container {
-    padding: 0 10px;
-  }
-
-  .team-section {
-    padding: 40px 20px;
-  }
 }
+
+
