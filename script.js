@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// pRODUCT PAGE CLICK aNIMATION  END
+
 // what we offer Animation
 // whatWeOfferAnimation(10000)
 
