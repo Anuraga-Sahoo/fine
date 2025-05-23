@@ -1,4 +1,3 @@
-/* updated */
 /* General Reset and base styles */
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 * {
@@ -7,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Root variables for consistent sizing and easy updates */
 :root {
     --primary-bg: #0a0a0a;
     --secondary-bg: #141414;
@@ -15,27 +13,21 @@
     --muted-text: #8b8b8b;
     --accent-color: #10d298;
     --border-color: #222;
-    --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
 }
 
-/* Body styles */
 body {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    background-color: var(--primary-bg);
+    background-color: black;
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.5;
     overflow-x: hidden;
     background-image: url('./img/backgroundImg.png');
-    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 
 body::before {
@@ -47,10 +39,8 @@ body::before {
     height: 100%;
     opacity: 0.2;
     z-index: -1;
-    
 }
 
-/* Responsive container */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -58,111 +48,12 @@ body::before {
     padding: 0 var(--spacing-md);
 }
 
-/* Searchbar */
-.Searchbar {
-    margin-top: clamp(1.5rem, 5vw, 3.75rem);
-    width: 100%;
-    max-width: 20.5rem;
-    height: 4rem;
-    color: #f8f6f6;
-    background: black;
-    border: 2px solid var(--border-color);
-    font-size: 1rem;
-    text-align: center;
-    font-family: inherit;
-}
-
-.maindiv {
-    margin-top: clamp(1.5rem, 5vw, 3.75rem);
-    width: 100%;
-    max-width: 25%;
-}
-
-.subdiv {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.6);
-    padding: clamp(1.5rem, 5vw, 4.375rem);
-    color: white;
-    margin-top: clamp(2rem, 7vw, 7rem);
-    text-align: left;
-}
-
-/* Header styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: clamp(0.75rem, 3vw, 1.25rem) clamp(1rem, 4vw, 2.5rem);
-    background: transparent;
-    position: relative;
-    z-index: 10;
-}
-
-
-
-/* Main content styles */
 main {
     padding: clamp(1.5rem, 5vw, 2.5rem) clamp(0.75rem, 3vw, 1.25rem) clamp(10rem, 6vw, 3.75rem);
     max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-
-}
-
-/* Section styles */
-.tabs {
-display: flex;
-  justify-content: left;
-  margin-top: 0px;
-      gap: 1rem;
-    padding: 0 0 0 6px;
-}
-
-.tab {
-  background-color: #111;
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  margin: 0 10px;
-  border-radius: 14px;
-  height: 91px;
-  font-size: 25px;
-  cursor: pointer;
-  width: 222px;
-  border-radius: 30px;
-transition: all ease 0.5s;
-}
-.tab:hover{
-  background-color: white;
-  color: black;
-}
-
-.tab.active {
-    background-color: white;
-    color: black;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: clamp(0.75rem, 3vw, 1.875rem);
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: x-large;
-}
-
-/* Headings styles */
-h1 {
-    font-weight: 400;
-    font-size: clamp(1.25rem, 4vw, 1.6rem);
-    line-height: 1.4;
-    max-width: 700px;
-}
-
-h1 strong, h1 b {
-    font-weight: 700;
 }
 
 k {
@@ -174,146 +65,13 @@ k {
     letter-spacing: 1px;
 }
 
-j {
+.platform-products {
     font-size: clamp(0.875rem, 3vw, 1rem);
-    font-weight: bold;
-    display: block;
-}
-
-/* Paragraph styles */
-p {
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    max-width: 100%;
-    line-height: 1.5;
-}
-
-.query {
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    color: var(--accent-color);
-}
-
-/* h2 styles */
-h2 {
-    font-weight: 700;
-    font-size: clamp(1rem, 3.5vw, 1.2rem);
-    margin-top: clamp(1rem, 3vw, 1.25rem);
-}
-
-/* Button styles */
-.about-btn {
-    background-color: rgb(8, 8, 8);
-    border: 1.5px solid var(--border-color);
+    font-weight: bolder;
     color: #fff;
-    padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.875rem);
-    border-radius: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    width: 100%;
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    height: auto;
-    min-height: 48px;
-    transition: all 0.3s ease;
-}
-.career-btn {
-    background-color: rgb(8, 8, 8);
-    border: 1.5px solid var(--border-color);
-    color: #fff;
-    padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.875rem);
-    border-radius: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    width: 100%;
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    height: auto;
-    min-height: 48px;
-    transition: all 0.3s ease;
+    margin: clamp(1.5rem, 5vw, 2.5rem) 0 clamp(1rem, 3vw, 1.25rem);
 }
 
-/* Hover effect for About and Career buttons */
-.about-btn:hover, .career-btn:hover {
-    background-color: #fdfcfc;
-    color: var(--primary-bg);
-    transform: scale(1.05);
-    transition: all 0.6s ease;
-}
-
-/* Navigation link style */
-.nav-link {
-    color: #777;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-link.active {
-    color: white;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-}
-
-/* Career options styles */
-.career-options {
-    display: flex;
-    flex-direction: column;
-    margin-top: clamp(0.5rem, 2vw, 0.625rem);
-    max-width: 100%;
-}
-.subnav {
-  padding: 0 0 0 9rem;
-    text-align: left;
-    margin: 29px 0 20px -136px;
-      
-}
-.subnav a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-size: 25px;
-}
-.subnav .open {
-    color: #b3b3b3;
-    
-}
-.bar {
-    background-color: transparent;
-    height: fit-content;
-    border: 2px solid white;
-    border-bottom: 0px;
-    border-top: 0px;
-    padding: 2px;
-}
-/* Option button styles */
-.option-btn {
-    background-color: #007bff;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    margin: clamp(0.25rem, 1vw, 0.375rem) 0;
-    padding: clamp(0.5rem, 2vw, 0.75rem);
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    font-weight: 600;
-    box-shadow: 0 2px 7px rgba(0, 123, 255, 0.5);
-}
-
-/* Career banner section styles */
-.career-banner-section {
-    margin-top: clamp(1rem, 3vw, 1.25rem);
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 15px #7fffd4;
-    backdrop-filter: blur(6px);
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Layout for financial services */
 .financial-services {
     color: #fff;
     max-width: 900px;
@@ -334,384 +92,20 @@ h2 {
     max-width: 30rem;
 }
 
-.platform-products {
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    font-weight: bolder;
-    color: #fff;
-    margin: clamp(1.5rem, 5vw, 2.5rem) 0 clamp(1rem, 3vw, 1.25rem);
-}
-
-.Barr {
-    border: 2px solid white;
-    border-top: 0;
-    border-bottom: 0;
-    color: white;
-    padding: 0 clamp(0.5rem, 2vw, 0.625rem);
-    font-weight: 500;
-}
-
-.white {
-    color: white;
-    font-weight: 500;
-}
-
 .haha {
     font-size: clamp(0.875rem, 3vw, 1rem);
     font-weight: bolder;
     color: #b3b3b3;
-     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
 .financial-services ul li .haha {
     font-weight: normal;
 }
 
-.financial-services p {
-    font-weight: 700;
-    margin-top: clamp(10rem, 30vw, 20.625rem);
-    font-size: clamp(0.875rem, 3vw, 1rem);
-    margin-left: 0;
-}
-
-/* Card styles */
-.cards-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: clamp(0.75rem, 2.5vw, 1.25rem);
-    flex-wrap: wrap;
-}
-
-.card {
-    position: relative;
-    background-color: #070707;
-    border: 1px solid #3f3f3f;
-    padding: clamp(1rem, 3vw, 1.875rem);
-    width: 100%;
-    max-width: 272px;
-    min-height: 220px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin-top: clamp(2rem, 6vw, 5.3125rem);
-}
-
-.card-header {
-    font-size: clamp(0.75rem, 2.5vw, 0.8rem);
-    color: #777;
-    margin-bottom: clamp(0.75rem, 2.5vw, 0.938rem);
-    text-transform: uppercase;
-}
-
-.card-title {
-    font-size: clamp(1rem, 3.5vw, 1.2rem);
-    margin-bottom: auto;
-    color: #ccc;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: clamp(1rem, 3vw, 1.25rem);
-    font-size: clamp(0.75rem, 2.5vw, 0.8rem);
-    color: #777;
-}
-
-.view-more-overlay {
-    position: absolute;
-    bottom: -60px;
-    left: 0;
-    right: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: white;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: bottom 0.3s ease;
-}
-
-.view-more-btn {
-    background: none;
-    border: none;
-    color: #111;
-    cursor: pointer;
-    margin-top: clamp(0.5rem, 2vw, 0.625rem);
-    font-size: clamp(0.875rem, 3vw, 1rem);
-}
-
-.card:hover .view-more-overlay {
-    bottom: 0;
-}
-
-a {
-    color: #b3b3b3;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* Job application styles */
-.job-details {
-    flex: 1;
-    padding-right: clamp(1rem, 3vw, 2.5rem);
-    border-right: 1px solid var(--border-color);
-}
-
-.application-form {
-    flex: 1;
-    padding-left: clamp(1rem, 3vw, 2.5rem);
-}
-
-/* Job Details Styling */
-.back-link {
-    display: inline-block;
-    margin-bottom: clamp(1.5rem, 4vw, 1.875rem);
-    font-size: clamp(0.875rem, 3vw, 1rem);
-}
-
-.job-header {
-    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
-    padding-bottom: clamp(1rem, 3vw, 1.25rem);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.applying-text {
-    font-size: clamp(0.75rem, 2.5vw, 0.8rem);
-    opacity: 0.7;
-    margin-bottom: 5px;
-}
-
-/* Form elements */
-.form-group {
-    margin-bottom: clamp(1rem, 3vw, 1.25rem);
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"] {
-    display: flex;
-    width: 100%;
-    max-width: 337px;
-    padding: clamp(0.75rem, 2.5vw, 0.938rem);
-    background-color: black;
-    border: 1px solid gray;
-    color: white;
-    height: clamp(3rem, 10vw, 4.44rem);
-    font-size: clamp(0.825rem, 2.75vw, 0.9rem);
-    border-radius: 10px;
-}
-
-.upload-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 337px;
-    height: clamp(3rem, 10vw, 4.44rem);
-    border: 1px solid gray;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: black;
-    color: rgb(95, 94, 94);
-}
-
-.apply-btn {
-    display: block;
-    width: 100%;
-    max-width: 337px;
-    padding: clamp(0.75rem, 2.5vw, 0.938rem);
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-
-/* ---- responsive adjustments ---- */
-/* Add these media queries at the end of your CSS file */
-
-@media (max-width: 1200px) {
-  .navbar {
-    max-width: 800px;
-    height: 75px;
-    padding: 0 1.5rem;
-  }
-  
-  .tab {
-    width: 200px;
-    height: 80px;
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar {
-    max-width: 700px;
-    height: 70px;
-  }
-  
-  .menu {
-    gap: 1.5rem;
-  }
-  
-  .tab {
-    width: 180px;
-    height: 70px;
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-  
-  .financial-services ul li {
-    max-width: 100%;
-  }
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  body {
-    padding-top: 60px;
-  }
-  
-  .navbar {
-    max-width: 90%;
-    height: 60px;
-    top: 10px;
-    padding: 0 1rem;
-  }
-  
-  .logo img {
-    height: 24px;
-  }
-  
-  .menu {
-    gap: 1rem;
-  }
-  
-  .menu a {
-    font-size: 0.9rem;
-  }
-  
-  .sign-in-btn {
-    padding: 0.3rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .tabs {
-    justify-content: left;
-  }
-  
-  .tab {
-    width: 160px;
-    height: 60px;
-    font-size: 18px;
-    margin: 0 5px;
-  }
-  
-  .aboutfine k {
-    font-size: 14px;
-    padding: 0 1rem;
-  }
-  
-  .platform-products {
-    padding: 0 1rem;
-  }
-  
-  .financial-services {
-    padding: 0 1rem;
-  }
-  
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar {
-    height: 50px;
-    border-radius: 15px;
-  }
-  
-  .menu {
-    gap: 0.8rem;
-  }
-  
-  .menu a {
-    font-size: 0.8rem;
-  }
-  
-  .sign-in-btn {
-    padding: 0.2rem 0.8rem;
-  }
-  
-  .tab {
-    width: 140px;
-    height: 50px;
-    font-size: 16px;
-    border-radius: 25px;
-  }
-  
-  .aboutfine k {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-  
-  .platform-products {
-    font-size: 14px;
-    margin: 1rem 0;
-  }
-  
-  .financial-services ul li .haha {
-    font-size: 13px;
-  }
-  
-  .footer-container {
-    grid-template-columns: 1fr;
-    padding: 2rem;
-  }
-  
-  .footer-column {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 0.5rem;
-    top: 5px;
-  }
-  
-  .menu {
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  .tab {
-    width: 9rem;
-    max-width: 300px;
-    margin: 5px 0;
-  }
-  
-  .tabs {
-    /* flex-direction: column; */
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .aboutfine k {
-    font-size: 12px;
-  }
-  
-  .financial-services ul li .haha {
-    font-size: 12px;
-  }
+    .financial-services ul li {
+        max-width: 100%;
+    }
 }
