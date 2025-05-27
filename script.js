@@ -3,6 +3,17 @@ addEventListener("DOMContentLoaded", (event) => {
 
     runAnimationSequence(); // Run it first time immediately
     setInterval(runAnimationSequence, 8500); // Repeat every 7200ms
+  
+    // last animation
+    
+
+  
+    
+   
+    
+
+    
+    // last animation ends here
 
 
 // pRODUCT PAGE CLICK aNIMATION 
