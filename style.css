@@ -857,14 +857,16 @@ top: 0rem; */
 
 }
 .imgGroup1{
-    /* opacity: 0; */
+    opacity: 0;
+    /* display: none; */
 }
 .bg2{
-    opacity: 0;
+    /* opacity: 0; */
     animation: offerZoomIn 3s infinite linear;
 }
 .imgGroup2{
     overflow: hidden;
+    /* display: none; */
     opacity: 0;
     /* background-color: red; */
     /* height: 35rem; */
@@ -873,6 +875,7 @@ top: 0rem; */
     top: -111rem;
     left: 0;
     opacity: 0;
+    /* display: none; */
 }
 .cardImgAdjustment3{
     bottom: 28.5rem;
@@ -886,7 +889,7 @@ top: 0rem; */
 
 }
 .bg3{
-    opacity: 0;
+    /* opacity: 0; */
     animation: backZoomMore 1s  linear infinite;
 }
 .imgGroup4{
@@ -894,6 +897,7 @@ top: 0rem; */
     /* background-color: red; */
     position: relative;
     opacity: 0;
+    /* display: none; */
     
 }
 .cardImgAdjustment4{

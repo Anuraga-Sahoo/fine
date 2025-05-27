@@ -6,8 +6,8 @@ addEventListener("DOMContentLoaded", (event) => {
   
     // last animation
     
-
-  
+  whatWeOfferAnimationSequence();
+  setInterval(whatWeOfferAnimationSequence, 4000);
     
    
     
@@ -45,31 +45,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-// what we offer Animation
-// whatWeOfferAnimation(10000)
-
-// // hamburger menue
-
-//   document.querySelector('.hamburger').addEventListener('click', function(e) {
-//     e.stopPropagation();
-//     document.querySelector('.menu').classList.toggle('active');
-//   });
-
-//   document.addEventListener('click', function(e) {
-//     const menu = document.querySelector('.menu');
-//     const hamburger = document.querySelector('.hamburger');
-//     if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
-//       menu.classList.remove('active');
-//     }
-//   });
-
-//   document.querySelectorAll('.menu a, .sign-in-btn').forEach(item => {
-//     item.addEventListener('click', () => {
-//       document.querySelector('.menu').classList.remove('active');
-//     });
-//   });
-  // end
     
 })
 
@@ -97,13 +72,24 @@ function loadAnimation(time, showingElement, hidingElement){
     }, time)
 }
 
-function whatWeOfferAnimation(time){
-    setTimeout(()=>{
-        const offerBackground = document.getElementById("whatWeOfferBackground")
-        offerBackground.classList.add("offerZoomIn")
-        offerBackground.classList.remove("offerZoomOut")
 
-        // offerBackground.removeAttribute("class","offerZoomOut")
+function whatWeOfferAnimationSequence(){
+  WhatWeOfferAnimation(1000, "imgGroup1", "imgGroup4");
+    WhatWeOfferAnimation(2000, "imgGroup2", "imgGroup1");
+    WhatWeOfferAnimation(3000, "imgGroup3", "imgGroup2");
+    WhatWeOfferAnimation(4000, "imgGroup4", "imgGroup3");
+}
+
+function WhatWeOfferAnimation(time, showingElement, hidingElement){
+  setTimeout(()=>{
+
+         const showEl = document.getElementById(showingElement);
+        const hideEl = document.getElementById(hidingElement);
+        
+        if (showEl) showEl.style.opacity = 1;
+        if (hideEl) {
+            hideEl.style.opacity = 0;
+        }
     }, time)
 }
 
