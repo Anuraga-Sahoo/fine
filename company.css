@@ -57,7 +57,7 @@ main {
 }
 
 k {
-    font-size: clamp(0.875rem, 3vw, 1rem);
+    font-size: clamp(0.875rem, 3vw, 24px);
     max-width: 100%;
     line-height: 1.5;
     color: #FFFFFF;
@@ -66,7 +66,7 @@ k {
 }
 
 .platform-products {
-    font-size: clamp(0.875rem, 3vw, 1rem);
+    font-size: clamp(24px, 3vw, 1rem);
     font-weight: bolder;
     color: #fff;
     margin: clamp(1.5rem, 5vw, 2.5rem) 0 clamp(1rem, 3vw, 1.25rem);
@@ -93,7 +93,7 @@ k {
 }
 
 .haha {
-    font-size: clamp(0.875rem, 3vw, 1rem);
+    font-size: clamp(0.875rem, 3vw, 24px);
     font-weight: bolder;
     color: #b3b3b3;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
