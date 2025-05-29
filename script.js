@@ -93,4 +93,3 @@ function WhatWeOfferAnimation(time, showingElement, hidingElement){
     }, time)
 }
 
-
