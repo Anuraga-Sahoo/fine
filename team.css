@@ -13,14 +13,16 @@ body {
   padding: 60px 40px;
   min-height: 100vh;
   box-sizing: border-box;
+  margin-bottom: 189px;
 }
 
 .team-heading h1 {
-  font-size: 55px;
-  font-weight: 800;
+  font-size: 80px;
+  font-weight: 600;
   margin: 0 0 100px 192px;
-  text-align: left;
+  /* text-align: left; */
   line-height: 1.2;
+  margin-left: 188px;
 }
 
 .team-container {
@@ -173,8 +175,8 @@ body {
 /* Tablet devices */
 @media (max-width: 1024px) {
   .team-heading h1 {
-    font-size: 42px;
-    margin-left: -5px;
+    font-size: 57px;
+    margin-left: 3px;
   }
 
   .team-container {
@@ -183,8 +185,8 @@ body {
   }
 
   .team-member img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -230,12 +232,14 @@ body {
   }
   .team-heading h1{
         margin: 0 0 66px 0;
+        font-size: 47px;
 
   }
 
   .team-member p {
     font-size: 12px;
   }
-}
 
+}
+ 
 
