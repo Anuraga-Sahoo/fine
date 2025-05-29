@@ -9,7 +9,17 @@
 
         }
         body{
-            background: url("./img/backgroundImg.png");
+           font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background-color: black;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-image: url('./img/backgroundImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
         }
 
         .container {
@@ -19,18 +29,18 @@
         }
         .effective-date-span{
             color: white;
-            font-size: larger;
+            font-size: x-large;
         }
 
         .effective-date {
             color: #AFAFAF;
             margin-bottom: 1.5rem;
-            font-size: 0.9rem;
+            font-size: large;
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 5.5rem;
             color: white;
             font-weight: 500;
         }
