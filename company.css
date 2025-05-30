@@ -89,7 +89,7 @@ k {
     margin-bottom: clamp(1rem, 3vw, 1.25rem);
     font-size: clamp(0.875rem, 3vw, 1rem);
     width: 100%;
-    max-width: 30rem;
+    /* max-width: 30rem; */
 }
 
 .haha {

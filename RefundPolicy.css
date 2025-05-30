@@ -6,12 +6,11 @@
   body {
             line-height: 1.6;
             margin: 9rem 0 0 0 ;
-            padding: 20px;
             font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    background-color: var(--primary-bg);
-    color: var(--text-color);
-    font-size: 16px;
-    overflow-x: hidden;
+    /* background-color: var(--primary-bg);
+    color: var(--text-color); */
+    /* font-size: 16px; */
+    /* overflow-x: hidden; */
     background-image: url('./img/backgroundImg.png');
     background-color: black;
     background-repeat: no-repeat;
@@ -106,10 +105,34 @@
 
         @media (max-width: 768px) {
             .policy-container {
-                padding: 20px;
+                margin-left: 91px;
             }
             
             h1 {
                 font-size: 24px;
             }
         }
+
+        @media (max-width: 480px){
+            .body{
+                margin-top: 3rem;
+            }
+             .policy-container {
+                margin-left: 0px;
+                padding: 0 40px;
+            }
+            
+            .refundHead{
+                font-size: 2.5rem;
+            }
+            .thank-you {
+                font-size: 17px;
+            }
+            .bullet-points{
+                padding-left: 0;
+            }
+            .bullet-points li{
+                width: 100%;
+            }
+        }
+        
