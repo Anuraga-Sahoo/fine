@@ -6,8 +6,8 @@ addEventListener("DOMContentLoaded", (event) => {
   
     // last animation
     
-  whatWeOfferAnimationSequence();
-  setInterval(whatWeOfferAnimationSequence, 4000);
+  // whatWeOfferAnimationSequence();
+  // setInterval(whatWeOfferAnimationSequence, 4000);
     
    
     
@@ -45,6 +45,100 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+// what we offer page animation
+ const groups = [
+                document.getElementById('imgGroup1'),
+                document.getElementById('imgGroup2'),
+                document.getElementById('imgGroup3'),
+                document.getElementById('imgGroup4')
+            ];
+            
+            const indicators = document.querySelectorAll('.indicator');
+            
+            
+            let currentGroup = 0;
+            let isScrolling = false;
+            
+            // Initialize first group
+            updateActiveGroup();
+            
+            // Scroll event listener
+            window.addEventListener('wheel', function(e) {
+                if (isScrolling) return;
+                
+                isScrolling = true;
+                
+                // Scroll down
+                if (e.deltaY > 0) {
+                    if (currentGroup < groups.length - 1) {
+                        currentGroup++;
+                        animateTransition('down');
+                    }
+                } 
+                // Scroll up
+                else {
+                    if (currentGroup > 0) {
+                        currentGroup--;
+                        animateTransition('up');
+                    }
+                }
+                
+                // Reset scroll lock after delay
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 800);
+            });
+            
+            
+            
+            // Indicator event listeners
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', function() {
+                    const targetIndex = parseInt(this.getAttribute('data-index'));
+                    
+                    if (targetIndex !== currentGroup) {
+                        const direction = targetIndex > currentGroup ? 'down' : 'up';
+                        currentGroup = targetIndex;
+                        animateTransition(direction);
+                    }
+                });
+            });
+            
+            // Animate transition between groups
+            function animateTransition(direction) {
+                // Remove active classes
+                groups.forEach(group => group.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                // Add animation class based on direction
+                if (direction === 'down') {
+                    groups[currentGroup].classList.add('zoom-in');
+                } else {
+                    groups[currentGroup].classList.add('zoom-out');
+                }
+                
+                // Add active class after delay
+                setTimeout(() => {
+                    groups[currentGroup].classList.add('active');
+                    indicators[currentGroup].classList.add('active');
+                    
+                    // Remove animation classes
+                    groups[currentGroup].classList.remove('zoom-in', 'zoom-out');
+                }, 50);
+            }
+            
+            // Update active group
+            function updateActiveGroup() {
+                groups.forEach((group, index) => {
+                    group.classList.toggle('active', index === currentGroup);
+                });
+                
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentGroup);
+                });
+            }
+
     
 })
 
@@ -73,23 +167,23 @@ function loadAnimation(time, showingElement, hidingElement){
 }
 
 
-function whatWeOfferAnimationSequence(){
-  WhatWeOfferAnimation(1000, "imgGroup1", "imgGroup4");
-    WhatWeOfferAnimation(2000, "imgGroup2", "imgGroup1");
-    WhatWeOfferAnimation(3000, "imgGroup3", "imgGroup2");
-    WhatWeOfferAnimation(4000, "imgGroup4", "imgGroup3");
-}
+// function whatWeOfferAnimationSequence(){
+//   WhatWeOfferAnimation(1000, "imgGroup1", "imgGroup4");
+//     WhatWeOfferAnimation(2000, "imgGroup2", "imgGroup1");
+//     WhatWeOfferAnimation(3000, "imgGroup3", "imgGroup2");
+//     WhatWeOfferAnimation(4000, "imgGroup4", "imgGroup3");
+// }
 
-function WhatWeOfferAnimation(time, showingElement, hidingElement){
-  setTimeout(()=>{
+// function WhatWeOfferAnimation(time, showingElement, hidingElement){
+//   setTimeout(()=>{
 
-         const showEl = document.getElementById(showingElement);
-        const hideEl = document.getElementById(hidingElement);
+//          const showEl = document.getElementById(showingElement);
+//         const hideEl = document.getElementById(hidingElement);
         
-        if (showEl) showEl.style.opacity = 1;
-        if (hideEl) {
-            hideEl.style.opacity = 0;
-        }
-    }, time)
-}
+//         if (showEl) showEl.style.opacity = 1;
+//         if (hideEl) {
+//             hideEl.style.opacity = 0;
+//         }
+//     }, time)
+// }
 

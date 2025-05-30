@@ -880,17 +880,17 @@ top: 0rem; */
 .cardImgAdjustment3{
     bottom: 28.5rem;
     left: 23.5rem;
-     animation: rightToLeftSwipe 1s  linear infinite;
+     animation: rightToLeftSwipe 4s  linear infinite;
 }
 .godImgAdjustment3{
     top: -27rem;
     left: 60rem;
-     animation: rotateandApper 1s  linear infinite;
+     animation: rotateandApper 4s  linear infinite;
 
 }
 .bg3{
     /* opacity: 0; */
-    animation: backZoomMore 1s  linear infinite;
+    animation: backZoomMore 4s  linear infinite;
 }
 .imgGroup4{
         top: -166.5rem;
@@ -903,30 +903,32 @@ top: 0rem; */
 .cardImgAdjustment4{
     bottom: 28rem;
     right: 3rem;
-    animation: rightToleftSwipe 2s infinite linear ;
+    animation: rightToleftSwipe 3s infinite ease ;
 }
 .godImgAdjustment4{
         bottom: 26rem;
     right: -17rem;
-    animation: OfferAppear 2s infinite linear;
+    animation: OfferAppear 3s infinite ease;
 }
 
-/* ============================ */
+/* ============ Used in javascript ================ */
 
+.imgGroup {
+            
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.8s ease, visibility 5s ease;
+            transform-style: preserve-3d;
+        }
 
+        .imgGroup.active {
+            opacity: 1;
+            visibility: visible;
+        }
 
 /* ============================== */
 
-/* .imgGroup:nth-child(1){animation-delay: 0s;}
-.imgGroup:nth-child(1){animation-delay: 2s;}
-.imgGroup:nth-child(1){animation-delay: 4s;}
-.imgGroup:nth-child(1){animation-delay: 6s;} */
-/* .inactive{
-    display: none;
-}
-.active{
-    display: block;
-} */
+
 @keyframes rightToleftSwipe {
     0%{
         right: 3rem;
