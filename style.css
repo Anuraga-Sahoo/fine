@@ -927,6 +927,189 @@ top: 0rem; */
         }
 
 /* ============================== */
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .whatWeOfferImageGroup {
+        height: 25rem;
+        transform: scale(0.8);
+    }
+
+    .whatweOfferBackground {
+        height: 25rem;
+    }
+
+    .godImg, .whatWeOfferCard {
+        height: 15rem;
+    }
+
+    /* Adjust positions for tablet */
+    .godImgAdjustment1 {
+        bottom: 15rem;
+        left: 35rem;
+    }
+
+    .cardImgAdjustment1 {
+        bottom: 20rem;
+    }
+
+    .godImgAdjustment2 {
+        bottom: 17rem;
+        right: -10rem;
+    }
+
+    .cardImgAdjustment2 {
+        bottom: 20rem;
+        left: 15rem;
+    }
+
+    .imgGroup2 {
+        top: -650px;
+    }
+    
+    .imgGroup3 {
+        top: -650px;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        transform: translateZ(0);
+    }
+
+    .cardImgAdjustment3 {
+        bottom: 20.5rem;
+        left: 17.5rem;
+        opacity: 1;
+        animation: rightToLeftSwipe 4s linear infinite;
+    }
+
+    .godImgAdjustment3 {
+        top: -20rem;
+        left: 40rem;
+        opacity: 1;
+        animation: rotateandApper 4s linear infinite;
+    }
+
+    .imgGroup4 {
+        top: -120rem;
+    }
+
+    .cardImgAdjustment4 {
+        bottom: 20rem;
+        right: 2rem;
+    }
+
+    .godImgAdjustment4 {
+        bottom: 18rem;
+        right: -12rem;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .whatWeOfferImageGroup {
+        height: 20rem;
+        transform: scale(0.5);
+    }
+
+    .whatweOfferBackground {
+        height: 20rem;
+    }
+
+    .godImg, .whatWeOfferCard {
+        height: 12rem;
+    }
+
+    /* Adjust positions for mobile */
+    .godImgAdjustment1 {
+        bottom: 12rem;
+        left: 25rem;
+    }
+
+    .cardImgAdjustment1 {
+        bottom: 16rem;
+    }
+
+    .godImgAdjustment2 {
+        bottom: 14rem;
+        right: -8rem;
+    }
+
+    .cardImgAdjustment2 {
+        bottom: 16rem;
+        left: 12rem;
+    }
+
+    .imgGroup2, .imgGroup3 {
+        top: -520px;
+    }
+
+    .cardImgAdjustment3 {
+        bottom: 16.5rem;
+        left: 14rem;
+    }
+
+    .godImgAdjustment3 {
+        top: -16rem;
+        left: 30rem;
+    }
+
+    .imgGroup4 {
+        top: -95rem;
+    }
+
+    .cardImgAdjustment4 {
+        bottom: 16rem;
+        right: 1.5rem;
+    }
+
+    .godImgAdjustment4 {
+        bottom: 14rem;
+        right: -9rem;
+    }
+
+
+
+    /* Scale down animations */
+    @keyframes OfferZoomOut {
+        0% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(0.8);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+    }
+
+    @keyframes offerZoomIn {
+        0% {
+            transform: scale(0.8);
+        }
+        100% {
+            transform: scale(0.9);
+        }
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .whatWeOfferImageGroup {
+        transform: scale(0.3);
+    }
+
+    .whatWeOfferHead {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+/*==========================================================*/
 
 
 @keyframes rightToleftSwipe {
