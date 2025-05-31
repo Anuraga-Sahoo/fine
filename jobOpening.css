@@ -340,7 +340,7 @@ h2 {
     border: 1px solid #3f3f3f;
     padding: clamp(1rem, 3vw, 1.875rem);
     width: 100%;
-    max-width: 335px;
+    max-width: 400px;
     min-height: 335px;
     overflow: hidden;
     display: flex;

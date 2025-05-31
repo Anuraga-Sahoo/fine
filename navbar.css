@@ -40,8 +40,9 @@ body {
 /* Menu links */
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: 2.9rem;
   align-items: center;
+  margin-right:50px;
 }
 
 .menu a {
