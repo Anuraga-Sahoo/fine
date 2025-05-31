@@ -10,10 +10,13 @@
       margin-bottom: 30px;
       font-weight: 600;
     }
+    .faq-section h3 {
+      margin-left: -18px;
+    }
 
     .faq-item {
       margin-bottom: 30px;
-      margin-left: 256px;
+      margin-left: -19px;
     }
 
     .faq-item strong {
@@ -27,6 +30,7 @@
       font-size: 16px;
       color: #cccccc;
       line-height: 1.6;
+      margin-left: -21px;
     }
     .recent-post1 img {
     width: 77%;
