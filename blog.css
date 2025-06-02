@@ -143,6 +143,12 @@ body {
   .main-blog,
   .sidebar {
     min-width: 100%;
+    /* display: flex;
+    text-align: center; */
+  }
+  .sidebar{
+    display: flex;
+    text-align: center;
   }
 
   .page-title {
@@ -181,6 +187,9 @@ body {
 
   .page-title {
     font-size: 60px;
+  }
+  .sidebar{
+    flex-direction: column;
   }
 
   .blog-article h2,
