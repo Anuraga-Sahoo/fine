@@ -1,15 +1,23 @@
-
-.recent-post1 img {
-    width: 77% !important;
+.banner-img, .sidebar_img {
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 @media (max-width:480px){
+.banner-img, .sidebar_img {
+    width: 77%;
+    height: auto;
+    border-radius: 8px;
+}
     .featured-post p{
         font-size: 14px;
         line-height: 1.3rem;
+        width: 90%;
     }
     .featured-post h3,h4{
         font-size:26px;
+        width: 90%;
     }
+    
 }
