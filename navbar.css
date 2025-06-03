@@ -197,9 +197,11 @@ body {
   }
   
   .menu.active {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 91px;
   }
   
   .hamburger {
@@ -213,3 +215,27 @@ body {
 /* Add this to your HTML:
 <div class="hamburger">☰</div>
 */
+/* macbook------------------------------------------------------------ */
+@media screen and (min-device-width: 3072px) and (max-device-width: 3072px) and 
+                  (min-device-height: 1920px) and (max-device-height: 1920px) and 
+                  (-webkit-device-pixel-ratio: 2) {
+  
+  .navbar {
+        top: 12px;
+        height: 150px;
+        padding: 1px 65rem;
+        width: 84rem;
+  }
+  .logo img {
+    height: 70px;
+    margin: -897px;
+  }
+  .menu a {
+    font-size: 2.5rem;
+    margin-left: 124px;
+  }
+  .menu{
+    gap: 3.5rem;
+    margin-right: -880px;
+  }
+}

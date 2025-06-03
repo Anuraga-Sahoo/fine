@@ -168,6 +168,60 @@ function loadAnimation(time, showingElement, hidingElement){
 
 
 // function whatWeOfferAnimationSequence(){
+const slides = document.querySelectorAll(".mobile-slide");
+const section = document.querySelector(".mobileview");
+const totalSlides = slides.length;
+
+window.addEventListener("scroll", () => {
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const scrollY = window.scrollY;
+  const windowHeight = window.innerHeight;
+
+  console.log({
+    sectionTop,
+    sectionHeight,
+    scrollY,
+    windowHeight,
+    totalSlides
+  });
+
+  if (scrollY >= sectionTop - windowHeight && scrollY <= sectionTop + sectionHeight) {
+    // Try different calculation methods
+    const scrollPos = scrollY - sectionTop;
+    const viewportMidpoint = scrollY + (windowHeight / 2);
+    const relativeToViewportMid = viewportMidpoint - sectionTop;
+    
+    // Method 1: Based on section top
+    const index1 = Math.min(
+      totalSlides - 1,
+      Math.max(0, Math.floor(scrollPos / (sectionHeight / totalSlides)))
+    );
+    
+    // Method 2: Based on viewport center
+    const index2 = Math.min(
+      totalSlides - 1,
+      Math.max(0, Math.floor(relativeToViewportMid / (sectionHeight / totalSlides)))
+    );
+
+    console.log({
+      scrollPos,
+      relativeToViewportMid,
+      index1,
+      index2,
+      percentScrolled: (scrollPos / sectionHeight) * 100
+    });
+
+    // Use index2 for viewport-center based switching
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index2);
+    });
+  }
+});
+
+
+
+
 //   WhatWeOfferAnimation(1000, "imgGroup1", "imgGroup4");
 //     WhatWeOfferAnimation(2000, "imgGroup2", "imgGroup1");
 //     WhatWeOfferAnimation(3000, "imgGroup3", "imgGroup2");
