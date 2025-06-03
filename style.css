@@ -925,8 +925,16 @@ top: 0rem; */
             opacity: 1;
             visibility: visible;
         }
-
 /* ============================== */
+
+.mobileview{
+    display: none;
+    
+}
+
+
+
+
 /* Tablet View (768px and below) */
 @media (max-width: 768px) {
     .whatWeOfferImageGroup {
@@ -1007,6 +1015,7 @@ top: 0rem; */
     .whatWeOfferImageGroup {
         height: 20rem;
         transform: scale(0.5);
+        display: none;
     }
 
     .whatweOfferBackground {
@@ -1064,6 +1073,48 @@ top: 0rem; */
         bottom: 14rem;
         right: -9rem;
     }
+ .mobileview {
+  display: block;
+  height: 59vh;
+  position: relative;
+}
+
+.mobile-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mobile-slide {
+  position: absolute;
+  width: 101vw;
+  height: 57vh;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+}
+
+.mobile-slide.active {
+  opacity: 1;
+  z-index: 1;
+  margin-top: 9px;
+}
+
+.mobile-slide-image {
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
 
 
 
@@ -1536,7 +1587,7 @@ top: 0rem; */
 }
 .nebulaButton {
     top: 61px;
-    right: 70px;
+    right: -63px;
 }
 .buttonlink{
     gap: 0.6rem;
@@ -1557,6 +1608,7 @@ top: 0rem; */
     .cardSection{
         /* background-color: red; */
         flex-direction: column;
+        margin-top: 160px;
     }
     .cardText {
         padding: 4rem 1rem 0;
@@ -1671,5 +1723,207 @@ top: 0rem; */
     }
 }
 
+/*==========================================macbook================================================*/
+@media screen and (min-device-width: 3072px) and (min-device-height: 1920px){
+    
+    /* header animation */
+    .circle {
+        height: 26rem;
+    }
 
+    .logoInsideCircle {
+        height: 8rem;
+        right: 240px;
+    }
 
+    .secondCircle {
+        margin: 0 0 0 24rem;
+    }
+
+    .secondLogo {
+        height: 3rem;
+        right: 740px;
+    }
+
+    .thardLogo {
+        height: 3.5rem;
+        right: 1010px;
+    }
+
+    .thardCircle {
+        margin: 42px 0 0 23rem;
+    }
+
+    .fourthLogo {
+        height: 3.5rem;
+        right: 790px;
+    }
+
+    .fourthCircle {
+        margin: 50px 0 0 22rem;
+    }
+
+    .eightthCircle {
+        margin: 0 0 0 21rem;
+    }
+
+    .tagLine {
+        font-size: 1.9rem;
+        right: 800px;
+    }
+
+    /* unlock your financial potential section */
+    .hover-Animation {
+        width: 100%;
+        height: 50%;
+        padding: 6rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hover-Animation:hover .hover-Animation-Test {
+        font-weight: 400;
+        font-size: 2.2rem;
+    }
+
+    .hover-Animation:hover .hover-Animation-para {
+        font-size: 7.1rem;
+        width: 68%;
+    }
+
+    .hover-Animation-Test {
+        font-weight: 400;
+        font-size: 7.5rem;
+    }
+
+    /* scroll animation */
+    .novaButton {
+        top: 50px;
+        right: 130px;
+    }
+
+    .finversityButton {
+        top: 41px;
+        right: -85px;
+    }
+
+    .nebulaButton {
+        top: 64px;
+        right: -60px;
+    }
+
+    .buttonlink {
+        gap: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .image-wrapper {
+        position: relative;
+        top: -30rem;
+    }
+
+    .scroll-section {
+        height: 24rem;
+    }
+
+    .slide-image {
+        height: 48vw;
+        width: 100%;
+        top: 30rem;
+    }
+
+    /* card section */
+    .cardSection {
+        flex-direction: column;
+        margin-top: 78rem;
+    }
+
+    .cardText {
+        padding: 4.5rem 1.5rem 0;
+        line-height: 2;
+    }
+
+    .cardHead {
+        font-size: 7.2rem;
+    }
+
+    .cardPara {
+        font-size: 3.2rem;
+    }
+
+    .cardsContainer {
+        padding: 1.5rem;
+        margin-top: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .card {
+        width: 41rem;
+        height: 57rem;
+    }
+
+    .iconAndText {
+        padding: 18px;
+    }
+
+    .TextAndButton {
+        padding: 0 1.8rem 1.8rem;
+    }
+
+    .cardButton {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Data privacy section */
+    .dataPrivacy {
+        margin: 4.5rem 0;
+        gap: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .dataPrivacyImage {
+        height: 4.5rem;
+    }
+
+    .textContainer {
+        gap: 1.2rem;
+    }
+
+    .dataPrivacyHeader {
+        font-size: 1.8rem;
+    }
+
+    .dataprivacyPara {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    /* why choose us section */
+    .chooseUsSection {
+        padding: 3.5rem 0rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .chooseUsHeading {
+        font-size: 3rem;
+        margin-bottom: 2.2rem;
+        padding: 0 1.2rem;
+    }
+
+    .AnimatedParaUl {
+        gap: 1.8rem;
+    }
+
+    .AnimatedParaUl li {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}
