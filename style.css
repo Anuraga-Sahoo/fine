@@ -1180,7 +1180,7 @@ top: 0rem; */
 
 
 
-
+/* ======karthi================ */
 /* Tablet View (768px and below) */
 @media (max-width: 768px) {
     .whatWeOfferImageGroup {
@@ -1231,14 +1231,14 @@ top: 0rem; */
         bottom: 20.5rem;
         left: 17.5rem;
         opacity: 1;
-        /* animation: rightToLeftSwipe 4s linear infinite; */
+        
     }
 
     .godImgAdjustment3 {
         top: -20rem;
         left: 40rem;
         opacity: 1;
-        /* animation: rotateandApper 4s linear infinite; */
+        
     }
 
     .imgGroup4 {
@@ -1361,7 +1361,7 @@ top: 0rem; */
 
 
 
-
+ 
 
 
     /* Scale down animations */
@@ -1402,7 +1402,7 @@ top: 0rem; */
 }
 
 
-
+/* =================end */
 
 
 
