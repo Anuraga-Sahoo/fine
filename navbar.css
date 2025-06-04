@@ -167,9 +167,12 @@ body {
     margin-top: 2.5rem;
     align-items: center;
   }
-  
-  .menu a {
-    font-size: 0.8rem;
+  .menu.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 33px;
   }
   
   body {
@@ -199,9 +202,9 @@ body {
   .menu.active {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 81%;
         align-items: flex-start;
-        padding-left: 91px;
+        padding-left: 33px;
   }
   
   .hamburger {

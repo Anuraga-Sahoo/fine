@@ -1203,8 +1203,8 @@ top: 0rem; */
     }
 
     .cardImgAdjustment1 {
-        bottom: 20rem;
-    }
+        bottom: 25rem;
+        margin-left: -72px;    }
 
     .godImgAdjustment2 {
         bottom: 17rem;
@@ -1229,14 +1229,14 @@ top: 0rem; */
 
     .cardImgAdjustment3 {
         bottom: 20.5rem;
-        left: 17.5rem;
+        margin-left: 13.5rem;
         opacity: 1;
         
     }
 
     .godImgAdjustment3 {
         top: -20rem;
-        left: 40rem;
+        margin-left: -12rem;
         opacity: 1;
         
     }
@@ -1247,12 +1247,12 @@ top: 0rem; */
 
     .cardImgAdjustment4 {
         bottom: 20rem;
-        right: 2rem;
+        margin-left: -9rem;
     }
 
     .godImgAdjustment4 {
         bottom: 18rem;
-        right: -12rem;
+        right: -7rem;
     }
 }
 
@@ -1297,7 +1297,7 @@ top: 0rem; */
     }
 
     .cardImgAdjustment3 {
-        bottom: 16.5rem;
+        bottom: 14rem;
         left: 14rem;
     }
 
@@ -1433,16 +1433,16 @@ top: 0rem; */
     }
     /* scroll animation */
     .novaButton {
-    top: 23px;
-    right: 246px;
+    top: 0px;
+        right: 287px;
 }
     .finversityButton {
-    top: 7px;
-    right: -130px;
+    top: -10px;
+    right: -140px;
 }
 .nebulaButton {
-    top: 42px;
-    right: -98px;
+    top: 0px;
+    right: -102px;
 }
 
     /* card container */
@@ -1856,8 +1856,8 @@ top: 0rem; */
 
     /* scroll animation */
     .novaButton {
-        top: 50px;
-        right: 130px;
+        top: 38px;
+        right: 66rem;
     }
 
     .finversityButton {
@@ -1866,13 +1866,14 @@ top: 0rem; */
     }
 
     .nebulaButton {
-        top: 64px;
-        right: -60px;
+        top: 12px;
+        right: -281px;
     }
 
     .buttonlink {
         gap: 0.8rem;
-        padding: 0.5rem;
+        padding: 20px;
+        font-size: 39px;
     }
 
     .image-wrapper {
@@ -1924,27 +1925,52 @@ top: 0rem; */
     }
 
     .iconAndText {
-        padding: 18px;
+        padding: 25px;
     }
-
+    .cardIcon {
+        height: 5rem;
+        width: 5rem;
+    }
+.iconText {
+    font-weight: 400;
+    font-size: 3.8rem;
+}
     .TextAndButton {
         padding: 0 1.8rem 1.8rem;
     }
 
     .cardButton {
-        width: 90%;
-        text-align: center;
+        width: 35%;
+        font-size: 2rem;
+        margin-left: 26px;
+        margin-top: 46px;
     }
+    .cardParaText{
+        font-weight: 500;
+        width: 96%;
+        font-size: 2.8rem;
+        margin-left: 25px;
+        height: 75px;
+    }
+    .cardImageOne {
+    height: 30rem;
+}
+.cardImageTwo {
+    height: 30rem;
+}
+.cardImageThree {
+    height: 30rem;
+}
 
     /* Data privacy section */
     .dataPrivacy {
-        margin: 4.5rem 0;
+        margin: 2.5rem 0;
         gap: 1.2rem;
-        padding: 1.2rem;
+        padding: 19.2rem;
     }
 
     .dataPrivacyImage {
-        height: 4.5rem;
+        height: 13.5rem;
     }
 
     .textContainer {
@@ -1952,12 +1978,12 @@ top: 0rem; */
     }
 
     .dataPrivacyHeader {
-        font-size: 1.8rem;
+        font-size: 3.5rem;
     }
 
     .dataprivacyPara {
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 2.3rem;
     }
 
     /* why choose us section */
@@ -1983,5 +2009,161 @@ top: 0rem; */
         font-size: 1.4rem;
         line-height: 1.5;
     }
+    .whatWeOffer{
+    /* position: relative;
+     top: 43rem; */
+     display: flex;
+     flex-direction: column;
+     gap: 4rem;
+     /* justify-content: center; */
+     align-items: center;
+     overflow: hidden;
+}
+.whatWeOfferHead{
+        color: white;
+        font-size: 5.8rem;
+        font-weight: 500;
+        height: 33rem;
+    }
+.whatWeOfferImageGroup{
+    /* position: absolute; */
+    position: relative;
+    /* background-color: red; */
+    height: 35rem;
+    /* height: fit-content; */
+}
+.imgGroup1{
+    top: 0;
+    left: 0;
+}
+.imgGroup2,
+.imgGroup3{
+    position: inherit;
+    top: -891px;
+    bottom: 0;
+    /* background-color: red; */
+}
+
+.whatweOfferBackground{
+     height: 35rem;
+}
+.offerZoomOut{
+     animation: OfferZoomOut 3s infinite ease;
+
+}
+.offerZoomIn{
+     /* animation: OfferZoomIn 3s infinite ease; */
+
+}
+.godImg{
+    height: 20rem;
+    position: relative;
+    
+    
+}
+.whatWeOfferCard{
+    height: 20rem;
+    position: relative;
+    
+    
+    /* left: 55rem; */
+
+}
+.godImgAdjustment1{
+    bottom: 39rem;
+        left: 123rem;
+        opacity: 0;
+        animation: OfferAppear 3s infinite ease;
+        height: 38rem;
+    }
+.cardImgAdjustment1{
+    
+    bottom: 28rem;
+    opacity: 0;
+    animation: OfferAppear 3s infinite linear;
+}
+
+.godImgAdjustment2{
+    
+    bottom: 23rem;
+    right: -18rem;
+    animation: OfferAppear 3s infinite linear;
+}
+.cardImgAdjustment2{
+    bottom: 28rem;
+    left: 20rem;
+    animation: OfferAppear 3s infinite linear;
+
+}
+.imgGroup1{
+    opacity: 0;
+    /* display: none; */
+}
+.bg2{
+    /* opacity: 0; */
+    animation: offerZoomIn 3s infinite linear;
+}
+.imgGroup2{
+    overflow: hidden;
+    /* display: none; */
+    opacity: 0;
+    /* background-color: red; */
+    /* height: 35rem; */
+}
+.imgGroup3{
+    top: -111rem;
+    left: 0;
+    opacity: 0;
+    /* display: none; */
+}
+.cardImgAdjustment3{
+    bottom: 28.5rem;
+    left: 23.5rem;
+     animation: rightToLeftSwipe 4s  linear infinite;
+}
+.godImgAdjustment3{
+    top: -27rem;
+    left: 60rem;
+     animation: rotateandApper 4s  linear infinite;
+
+}
+.bg3{
+    /* opacity: 0; */
+    animation: backZoomMore 4s  linear infinite;
+}
+.imgGroup4{
+        top: -166.5rem;
+    /* background-color: red; */
+    position: relative;
+    opacity: 0;
+    /* display: none; */
+    
+}
+.cardImgAdjustment4{
+    bottom: 28rem;
+    right: 3rem;
+    animation: rightToleftSwipe 3s infinite ease ;
+}
+.godImgAdjustment4{
+        bottom: 26rem;
+    right: -17rem;
+    animation: OfferAppear 3s infinite ease;
+}
+
+/* ============ Used in javascript ================ */
+
+.imgGroup {
+            
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.8s ease, visibility 5s ease;
+            transform-style: preserve-3d;
+        }
+
+        .imgGroup.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
 }
 
