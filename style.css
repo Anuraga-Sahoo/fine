@@ -809,7 +809,7 @@ top: 0rem; */
      height: 35rem;
 }
 .offerZoomOut{
-     animation: OfferZoomOut 3s infinite ease;
+     animation: OfferZoomOut 10s infinite ease;
 
 }
 .offerZoomIn{
@@ -835,25 +835,25 @@ top: 0rem; */
     bottom: 21rem;
     left: 55rem;
     opacity: 0;
-     animation: OfferAppear 3s infinite ease;
+     animation: OfferAppear 10s infinite ease;
 }
 .cardImgAdjustment1{
     
     bottom: 28rem;
     opacity: 0;
-    animation: OfferAppear 3s infinite linear;
+    animation: OfferAppear 10s infinite linear;
 }
 
 .godImgAdjustment2{
     
     bottom: 23rem;
     right: -18rem;
-    animation: OfferAppear 3s infinite linear;
+    animation: OfferAppear 10s infinite linear;
 }
 .cardImgAdjustment2{
     bottom: 28rem;
     left: 20rem;
-    animation: OfferAppear 3s infinite linear;
+    animation: OfferAppear 10s infinite linear;
 
 }
 .imgGroup1{
@@ -862,7 +862,7 @@ top: 0rem; */
 }
 .bg2{
     /* opacity: 0; */
-    animation: offerZoomIn 3s infinite linear;
+    animation: offerZoomIn 10s infinite linear;
 }
 .imgGroup2{
     overflow: hidden;
@@ -880,17 +880,21 @@ top: 0rem; */
 .cardImgAdjustment3{
     bottom: 28.5rem;
     left: 23.5rem;
-     animation: rightToLeftSwipe 4s  linear infinite;
+     animation: rightToLeftSwipe 10s  linear infinite;
 }
 .godImgAdjustment3{
     top: -27rem;
     left: 60rem;
-     animation: rotateandApper 4s  linear infinite;
+     animation: rotateandApper 10s  linear infinite;
 
 }
 .bg3{
     /* opacity: 0; */
-    animation: backZoomMore 4s  linear infinite;
+    animation: backZoomMore 10s  linear infinite;
+}
+.bg4{
+    animation: backZoomMore 10s  linear infinite;
+
 }
 .imgGroup4{
         top: -166.5rem;
@@ -903,12 +907,12 @@ top: 0rem; */
 .cardImgAdjustment4{
     bottom: 28rem;
     right: 3rem;
-    animation: rightToleftSwipe 3s infinite ease ;
+    animation: rightToleftSwipe 10s infinite ease ;
 }
 .godImgAdjustment4{
         bottom: 26rem;
     right: -17rem;
-    animation: OfferAppear 3s infinite ease;
+    animation: OfferAppear 10s infinite ease;
 }
 
 /* ============ Used in javascript ================ */
@@ -935,229 +939,6 @@ top: 0rem; */
 
 
 
-/* Tablet View (768px and below) */
-@media (max-width: 768px) {
-    .whatWeOfferImageGroup {
-        height: 25rem;
-        transform: scale(0.8);
-    }
-
-    .whatweOfferBackground {
-        height: 25rem;
-    }
-
-    .godImg, .whatWeOfferCard {
-        height: 15rem;
-    }
-
-    /* Adjust positions for tablet */
-    .godImgAdjustment1 {
-        bottom: 15rem;
-        left: 35rem;
-    }
-
-    .cardImgAdjustment1 {
-        bottom: 25rem;
-        margin-left: -72px;    }
-
-    .godImgAdjustment2 {
-        bottom: 17rem;
-        right: -10rem;
-    }
-
-    .cardImgAdjustment2 {
-        bottom: 20rem;
-        left: 15rem;
-    }
-
-    .imgGroup2 {
-        top: -650px;
-    }
-    
-    .imgGroup3 {
-        top: -650px;
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out;
-        transform: translateZ(0);
-    }
-
-    .cardImgAdjustment3 {
-        bottom: 20.5rem;
-        left: 17.5rem;
-        opacity: 1;
-        animation: rightToLeftSwipe 4s linear infinite;
-    }
-
-    .godImgAdjustment3 {
-        top: -20rem;
-        left: 40rem;
-        opacity: 1;
-        animation: rotateandApper 4s linear infinite;
-    }
-
-    .imgGroup4 {
-        top: -120rem;
-    }
-
-    .cardImgAdjustment4 {
-        bottom: 20rem;
-        right: 2rem;
-    }
-
-    .godImgAdjustment4 {
-        bottom: 18rem;
-        right: -12rem;
-    }
-}
-
-/* Mobile View (480px and below) */
-@media (max-width: 480px) {
-    .whatWeOfferImageGroup {
-        height: 20rem;
-        transform: scale(0.5);
-        display: none;
-    }
-
-    .whatweOfferBackground {
-        height: 20rem;
-    }
-
-    .godImg, .whatWeOfferCard {
-        height: 12rem;
-    }
-
-    /* Adjust positions for mobile */
-    .godImgAdjustment1 {
-        bottom: 12rem;
-        left: 25rem;
-    }
-
-    .cardImgAdjustment1 {
-        bottom: 16rem;
-    }
-
-    .godImgAdjustment2 {
-        bottom: 14rem;
-        right: -8rem;
-    }
-
-    .cardImgAdjustment2 {
-        bottom: 16rem;
-        left: 12rem;
-    }
-
-    .imgGroup2, .imgGroup3 {
-        top: -520px;
-    }
-
-    .cardImgAdjustment3 {
-        bottom: 16.5rem;
-        left: 14rem;
-    }
-
-    .godImgAdjustment3 {
-        top: -16rem;
-        left: 30rem;
-    }
-
-    .imgGroup4 {
-        top: -95rem;
-    }
-
-    .cardImgAdjustment4 {
-        bottom: 16rem;
-        right: 1.5rem;
-    }
-
-    .godImgAdjustment4 {
-        bottom: 14rem;
-        right: -9rem;
-    }
- .mobileview {
-  display: block;
-  height: 59vh;
-  position: relative;
-}
-
-.mobile-wrapper {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.mobile-slide {
-  position: absolute;
-  width: 101vw;
-  height: 57vh;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center content vertically */
-}
-
-.mobile-slide.active {
-  opacity: 1;
-  z-index: 1;
-  margin-top: 9px;
-}
-
-.mobile-slide-image {
-  position: absolute;
-  width: 100vw;
-  height: 60vh;
-  object-fit: cover;
-  z-index: -1;
-}
-
-
-
-
-
-
-    /* Scale down animations */
-    @keyframes OfferZoomOut {
-        0% {
-            transform: scale(1.2);
-            opacity: 0;
-        }
-        50% {
-            transform: scale(0.8);
-            opacity: 1;
-        }
-        100% {
-            transform: scale(0.8);
-            opacity: 0;
-        }
-    }
-
-    @keyframes offerZoomIn {
-        0% {
-            transform: scale(0.8);
-        }
-        100% {
-            transform: scale(0.9);
-        }
-    }
-}
-
-/* Extra small devices */
-@media (max-width: 360px) {
-    .whatWeOfferImageGroup {
-        transform: scale(0.3);
-    }
-
-    .whatWeOfferHead {
-        font-size: 2rem;
-    }
-}
-
-
-
-
 
 
 /*==========================================================*/
@@ -1168,13 +949,17 @@ top: 0rem; */
         right: 3rem;
         opacity: 0;
     }
+    10%,20%,30%,40%{
+         right: -20rem;
+        opacity: 1;
+    }
     50%{
         right: -20rem;
         opacity: 1;
     }
     100%{
         right: -20rem;
-        opacity: 0;
+        opacity: 1;
     }
 }
 @keyframes backZoomMore{
@@ -1182,13 +967,13 @@ top: 0rem; */
         transform: scale(1);
         opacity: 0;
      }
-     50%{
+     10%{
         transform: scale(1.5);
         opacity: 1;
      }
       100%{
         transform: scale(1.5);
-        opacity: 0;
+        opacity: 1;
      }
 }
 @keyframes rotateandApper {
@@ -1196,7 +981,34 @@ top: 0rem; */
         transform: scale(1);
         opacity: 0;
     }
-    50%{
+    10%{
+        transform: scale(1.3);
+        top: -29rem;
+        left: 58rem;
+        opacity: 1;
+    
+    }
+    60%{
+        transform: scale(1.3);
+        top: -29rem;
+        left: 58rem;
+        opacity: 1;
+    
+    }
+    70%{
+        transform: scale(1.3);
+        top: -29rem;
+        left: 58rem;
+        opacity: 1;
+    }
+    80%{
+        transform: scale(1.3);
+        top: -29rem;
+        left: 58rem;
+        opacity: 1;
+    
+    }
+    90%{
         transform: scale(1.3);
         top: -29rem;
         left: 58rem;
@@ -1207,7 +1019,7 @@ top: 0rem; */
         transform: scale(1.3);
         top: -29rem;
         left: 58rem;
-        opacity: 0;
+        opacity: 1;
 
 
     }
@@ -1218,14 +1030,34 @@ top: 0rem; */
     left: 23.5rem;
     opacity: 0;
     }
-    50%{
+    10%{
+        left: -1.5rem;
+        opacity: 1;
+
+    }
+    60%{
+        left: -1.5rem;
+        opacity: 1;
+
+    }
+    70%{
+        left: -1.5rem;
+        opacity: 1;
+
+    }
+    80%{
+        left: -1.5rem;
+        opacity: 1;
+
+    }
+    90%{
         left: -1.5rem;
         opacity: 1;
 
     }
     100%{
         left: -1.5rem;
-        opacity: 0;
+        opacity: 1;
     }
 }
 @keyframes OfferZoomOut{
@@ -1234,20 +1066,20 @@ top: 0rem; */
         opacity: 0;
 
     }
-    50%{
+    50%, 60%, 70%, 80%,90%{
         transform: scale(1);
         opacity: 1;
     }
     100%{
         transform: scale(1);
-        opacity: 0;
+        opacity: 1;
     }
 }
 @keyframes offerZoomIn {
     0%{
         transform: scale(1);
     }
-    100%{
+    50%,60%,70%,80%, 90%, 100%{
         transform: scale(1.1);
     }
 }
@@ -1255,17 +1087,17 @@ top: 0rem; */
     0%{
         opacity: 0;
     }
-    25%{
+    10%{
         opacity: 0.4;
     }
     50%{
         opacity: 1;
     }
-    75%{
+    75%, 85%, 95%{
         opacity: 1;
     }
     100%{
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -1346,6 +1178,231 @@ top: 0rem; */
     margin-left: 4rem;
 }
 
+
+
+/* ======karthi================ */
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .whatWeOfferImageGroup {
+        height: 25rem;
+        transform: scale(0.8);
+    }
+
+    .whatweOfferBackground {
+        height: 25rem;
+    }
+
+    .godImg, .whatWeOfferCard {
+        height: 15rem;
+    }
+
+    /* Adjust positions for tablet */
+    .godImgAdjustment1 {
+        bottom: 15rem;
+        left: 35rem;
+    }
+
+    .cardImgAdjustment1 {
+        bottom: 25rem;
+        margin-left: -72px;    }
+
+    .godImgAdjustment2 {
+        bottom: 17rem;
+        right: -10rem;
+    }
+
+    .cardImgAdjustment2 {
+        bottom: 20rem;
+        left: 15rem;
+    }
+
+    .imgGroup2 {
+        top: -650px;
+    }
+    
+    .imgGroup3 {
+        top: -1171px;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        transform: translateZ(0);
+    }
+
+    .cardImgAdjustment3 {
+        bottom: 20.5rem;
+        margin-left: 13.5rem;
+        opacity: 1;
+        
+    }
+
+    .godImgAdjustment3 {
+        top: -20rem;
+        margin-left: -12rem;
+        opacity: 1;
+        
+    }
+
+    .imgGroup4 {
+        top: -120rem;
+    }
+
+    .cardImgAdjustment4 {
+        bottom: 20rem;
+        margin-left: -9rem;
+    }
+
+    .godImgAdjustment4 {
+        bottom: 18rem;
+        right: -7rem;
+    }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+    .whatWeOfferImageGroup {
+        height: 20rem;
+        transform: scale(0.5);
+        display: none;
+    }
+
+    .whatweOfferBackground {
+        height: 20rem;
+    }
+
+    .godImg, .whatWeOfferCard {
+        height: 12rem;
+    }
+
+    /* Adjust positions for mobile */
+    .godImgAdjustment1 {
+        bottom: 12rem;
+        left: 25rem;
+    }
+
+    .cardImgAdjustment1 {
+        bottom: 16rem;
+    }
+
+    .godImgAdjustment2 {
+        bottom: 14rem;
+        right: -8rem;
+    }
+
+    .cardImgAdjustment2 {
+        bottom: 16rem;
+        left: 12rem;
+    }
+
+    .imgGroup2, .imgGroup3 {
+        top: -520px;
+    }
+
+    .cardImgAdjustment3 {
+        bottom: 14rem;
+        left: 14rem;
+    }
+
+    .godImgAdjustment3 {
+        top: -16rem;
+        left: 30rem;
+    }
+
+    .imgGroup4 {
+        top: -95rem;
+    }
+
+    .cardImgAdjustment4 {
+        bottom: 16rem;
+        right: 1.5rem;
+    }
+
+    .godImgAdjustment4 {
+        bottom: 14rem;
+        right: -9rem;
+    }
+ .mobileview {
+  display: block;
+  height: 59vh;
+  position: relative;
+}
+
+.mobile-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mobile-slide {
+  position: absolute;
+  width: 101vw;
+  height: 57vh;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+}
+
+.mobile-slide.active {
+  opacity: 1;
+  z-index: 1;
+  margin-top: 9px;
+}
+
+.mobile-slide-image {
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+ 
+
+
+    /* Scale down animations */
+    @keyframes OfferZoomOut {
+        0% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(0.8);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+    }
+
+    @keyframes offerZoomIn {
+        0% {
+            transform: scale(0.8);
+        }
+        100% {
+            transform: scale(0.9);
+        }
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .whatWeOfferImageGroup {
+        transform: scale(0.3);
+    }
+
+    .whatWeOfferHead {
+        font-size: 2rem;
+    }
+}
+
+
+/* =================end */
 
 
 
@@ -2109,3 +2166,4 @@ top: 0rem; */
         }
 
 }
+

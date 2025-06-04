@@ -58,10 +58,19 @@ table th, table td {
 }
 }
 @media(max-width:480px){
+  body{
+    overflow-x: hidden;
+  }
   .sidebar{
     margin-bottom: 7rem;
     padding-right: 20px;
 
   }
+.future-blog {
+        padding-left: 0px;
+      }
+.featured-post img{
+        width: 92%;
+      }
 }
 
